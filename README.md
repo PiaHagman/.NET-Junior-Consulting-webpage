@@ -3,7 +3,12 @@ Ett repo att forka en gång per grupp och bygga projektarbetet ovanpå
 
 Beslut
 - Vi jobbar i VS Code
-- 
+- Vi bygger en hemsida för ett konsultbolag med juniora webbutvecklare, 
+där vi själva är konsulterna. Våra produkter är de tjänster vi kan erbjuda 
+till förmånliga priser. 
+- Vi väljer gemensam färgpalett och Google fonts för rubriker och brödtext.
+- Kommunikation sker främst genom egen server i Discord. 
+- Vi planerar att dra igång ordentligt redan innan jul för att kunna unna oss lite ledighet över helgerna. 
 
 3: Skriv ner i en README projektkontrakt/när och hur ni ska jobba, vilka dagar folk kommer vara frånvarande
 
@@ -15,4 +20,7 @@ Ons/Fre hämtar jag barn och "slutar" 15:00.
 Borta 16/12 förmiddag.
 
 Pia
-Ser också detta som ett heltidsjobb, men är lite mer begränsad än vanligt under jul. Är på annan ort 23 december - 5 januari, men om vi känner att det saknas tid så kommer jag prioritera gruppen framför ledighet. :) Hoppas därför vi kan komma igång redan denna veckan och nästa för att se vart det leder. Ses också gärna irl i januari.
+Ser också detta som ett heltidsjobb, men är lite mer begränsad än vanligt under jul. 
+Är på annan ort 23 december - 5 januari, men om vi känner att det saknas tid så kommer 
+jag prioritera gruppen framför ledighet. :) Hoppas därför vi kan komma igång redan 
+denna veckan och nästa för att se vart det leder. Ses också gärna irl i januari.
