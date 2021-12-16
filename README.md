@@ -7,8 +7,8 @@ Beslut
 där vi själva är konsulterna. Våra produkter är de tjänster vi kan erbjuda 
 till förmånliga priser. 
 - Vi väljer gemensam färgpalett och Google fonts för rubriker och brödtext.
-- Kommunikation sker främst genom egen server i Discord. 
-- Vi planerar att dra igång ordentligt redan innan jul för att kunna unna oss lite ledighet över helgerna. 
+- Kommunikation sker främst genom egen server i Discord. Vi kollar av chat varje arbetsdag innan jul för att hålla oss uppdaterade om de andras arbete samt om vi behöver stämma av på digitalt möte. 
+- Vi planerar att dra igång ordentligt redan innan jul för att kunna unna oss lite ledighet över helgerna. Mellan 23 dec och 2 jan behöver vi inte ha avstämning lika ofta, men det kan vara bra att hålla lite koll på Discord då och då om någon skrivit något. 
 
 3: Skriv ner i en README projektkontrakt/när och hur ni ska jobba, vilka dagar folk kommer vara frånvarande
 
