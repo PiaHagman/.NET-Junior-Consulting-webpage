@@ -11,6 +11,7 @@
   box-shadow: 0 5px 10px #efefef;
 }
 
+/* gör at tjänster lägger sig */
 ul.navbar-nav li.profile-dropdown {
   margin-left: auto;
   margin-right: 50px;
@@ -29,7 +30,7 @@ ul.navbar-nav li.profile-dropdown {
 
 #home {
   background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg);
-  min-height: 100vh;
+  height: 500px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
