@@ -1,47 +1,46 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Noto Serif", serif;
+}
+body {
+  background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg) no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: center;
 }
 
-.header {
-  height: 100vh;
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
 }
-
-.navbar-style {
-  box-shadow: 0 5px 10px #efefef;
-}
-
-/* gör at tjänster lägger sig */
-ul.navbar-nav li.profile-dropdown {
-  margin-left: auto;
-  margin-right: 50px;
+.navbar-toggler {
+  color: #927374;
 }
 
 .logo-text {
-  font-size: 22px;
+  font-size: 30px;
   text-transform: uppercase;
-  color: red;
+  color: #927374;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: red;
-  font-weight: bold;
+.container {
+  text-align: center;
 }
 
-#home {
-  background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
+.container-content {
+  margin-top: 100px;
 }
 
-#home h1 {
-  text-transform: uppercase;
+.container-content h1 {
+  font-size: 350%;
+  color: #927374;
 }
 
-#home p {
-  max-width: 500px;
+.container-content p {
+  font-size: 150%;
+}
+
+.btn {
+  border: 1px solid black;
 }
