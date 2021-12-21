@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,6 +33,9 @@
           <h1>Våra tjänster</h1> 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis repudiandae, autem illo explicabo similique accusantium. Earum corporis consectetur tempore. Tempore harum quam suscipit aut soluta at quidem quos alias, dicta voluptatum. Dolores tempora modi iste nam ex ratione aliquid minima placeat sunt, ipsum voluptate iure eos repellendus dignissimos accusantium.</p>
         </div>
+        <div class="my-container">
+
+        </div>
       </div>
     </section> 
 
@@ -42,7 +45,7 @@
 
 <!--Kolumn 1-->
 <div class="col-md" >
-  <div class="my-container">
+  <div class="my-column-container">
     <div>
       <div class="card my-card" >
         <img src="images/mobil.jpg" class="card-img-top" alt="">
@@ -50,21 +53,24 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <button>
-              <a href="Index.html">Go somewhere</a>
+              <a href="Index.html">Läs mer</a>
             </button>
           </div>
       </div>
     </div>
 
-    <div class="card my-card" >
+    <div class="card my-image-card">
       <img src="images/coffee.jpg" class="card-img-top" alt="">
-          <div class="card-body">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Träffa oss för en kaffe.</h5>
+      </div>
+          <!-- <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <button>
               <a href="Index.html">Go somewhere</a>
             </button>
-          </div>
+          </div> -->
     </div>
 
   </div>
@@ -72,8 +78,35 @@
 
 <!--Kolumn 2-->
           <div class="col-md" >
-            <div class="my-container">
+            <div class="my-column-container">
               <div>
+                
+                <div class="card my-image-card" >
+                  <div class="video">
+                  <video autoplay muted >
+                    <source src="images/typing-video.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+                </div>
+                  <div class="card-img-overlay ">
+                    <h5 class="card-title">Vi får det att hända. <br> Se våra uppdrag.</h5>
+                  </div>
+                    
+                      <!-- <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button>
+                          <a href="Index.html">Go somewhere</a>
+                        </button>
+                      </div> -->
+                  
+                </div>
+
+
+
+
+
+
                   <div class="card my-card">
                     <img src="images/dator.jpg" class="card-img-top" alt="">
                       <div class="card-body">
@@ -87,28 +120,13 @@
                   </div>
                 
 
-                <div class="card my-card" >
-                  <video autoplay muted>
-                    <source src="images/typing-video.webm" type="video/webm">
-                  Your browser does not support the video tag.
-                  </video>
-                    <div>
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button>
-                          <a href="Index.html">Go somewhere</a>
-                        </button>
-                      </div>
-                    </div>
-                </div>
-
+                
               </div>
             </div>
             
 <!--Kolumn 3-->
             <div class="col-md" >
-              <div class="my-container">
+              <div class="my-column-container">
                 <div>
                   <div class="card my-card" >
                     <img src="images/people-talking.jpg" class="card-img-top" alt="">
@@ -413,7 +431,9 @@
 </section>
 
  -->
+<footer>
 
+</footer>
     <!--Script för bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>

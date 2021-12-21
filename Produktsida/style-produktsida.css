@@ -5,12 +5,18 @@
 } */
 body {
     background-color: #e6eded;
-    color: #527177; /*Text-färg*/
+    color:#19383d;; /*Text-färg*/
  }
 
  h1{
     font-family: 'Noto Serif', serif;
     font-size: 350%;
+ }
+
+ footer{
+    height: 100px;
+    background-color: blue;
+    width: 100%;
  }
 
  button {
@@ -60,18 +66,29 @@ button:hover, button a:hover{
  }
 
 
- .my-container{
+ .my-column-container, .my-row-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
     /* border: 3px solid red; */
  }
+
+ .my-row-container{
+    flex-direction: row;
+ }
  
- .my-card{
+ .my-card, .my-image-card{
     margin-bottom: 25px;
     /* border: 3px solid black; */
-    
+    border: none;
  }
+
+.my-image-card{
+   background: #e6eded;
+   color: #19383d;
+   margin-bottom: 21px;
+}
+ 
 
  .my-card:hover, .card:hover {
     display: block;
@@ -79,9 +96,25 @@ button:hover, button a:hover{
     width: 100%;
     opacity: 1;
     background: rgba(0,0,0,.2);
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     color: white;
     cursor:pointer;
+ }
+
+ .my-image-card:hover {
+   display: block;
+   height: 100%;
+   width: 100%;
+   background: rgba(255, 255, 255, 0);
+   cursor:pointer;
+   color: red;
+
+ }
+
+
+ .video{
+    border-radius: 4px;
+    size: 120%;
+    border-radius: 4px; 
+    overflow: hidden; 
  }
