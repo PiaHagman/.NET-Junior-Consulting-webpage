@@ -5,7 +5,7 @@
 } */
 body {
     background-color: #e6eded;
-    color:#19383d;; /*Text-färg*/
+    color:#19383d; /*Text-färg*/
  }
 
  h1{
@@ -31,6 +31,15 @@ body {
     width: fit-content;
     margin-top: 8px;
     color: white;
+}
+
+a {
+text-decoration: none;
+color:#19383d;
+}
+
+a:hover{
+   color: white;
 }
      
 button a {
@@ -61,8 +70,7 @@ button:hover, button a:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: 
-    #4f5a57;
+    color: #4f5a57;
  }
 
 
@@ -83,13 +91,6 @@ button:hover, button a:hover{
     border: none;
  }
 
-.my-image-card{
-   background: #e6eded;
-   color: #19383d;
-   margin-bottom: 21px;
-}
- 
-
  .my-card:hover, .card:hover {
     display: block;
     height: 100%;
@@ -99,15 +100,23 @@ button:hover, button a:hover{
     transition: all 0.5s;
     color: white;
     cursor:pointer;
+    filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
  }
 
+ .my-image-card{
+   background: #e6eded;
+   color: #19383d;
+   margin-bottom: 21px;
+}
  .my-image-card:hover {
    display: block;
    height: 100%;
    width: 100%;
    background: rgba(255, 255, 255, 0);
    cursor:pointer;
-   color: red;
+   filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
+   color: #4f5a57;
+   font-weight: 300;
 
  }
 
