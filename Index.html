@@ -28,62 +28,129 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#"
-            ><span class="logo-text">Up for IT</span></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item dropdown profile-dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Tjänster
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Frontend</a></li>
-                  <li><a class="dropdown-item" href="#">Backend</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Fullstack</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+      <!-- NAVBAR-->
+      <div class="fixed-navbar">
+        <!--Navbar-light stylar navbar med förinställda färger-->
+        <!--.navbar-expand-lg determine when their content collapses behind a button. -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a href="#"><span class="logo-text">Up for IT</span></a>
+
+            <!--.navbar-toggler determine when their content collapses behind a button. 
+            HAMBURGEKNAPP FUNKTIONEN-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- "STOR BILD NAVBAR FUNKTION" -->
+
+            <!--.navbar-collapse determine when their content collapses behind a button. -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <!-- ms-auto mb-2 mb-lg-0 placerar navbar placerars till höger-->
+              <!--.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).-->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <!--Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.-->
+                <li class="nav-item dropdown profile-dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Tjänster
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Frontend</a></li>
+                    <li><a class="dropdown-item" href="#">Backend</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Fullstack</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
+
+    <!-- Main content area-->
     <div class="container">
       <div class="container-content"></div>
       <h1>Junior .NET developers</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat</p>
-      <a href="#Contact" class="btn btn-brand">Hire us</a>
+      <button>Hire us</button>
+      <div class="test">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab,
+          veritatis blanditiis, neque incidunt sapiente id ipsam perspiciatis
+          quo repellat ducimus quibusdam quas a labore, eligendi adipisci
+          deleniti nostrum quia quod maxime distinctio itaque quaerat minima!
+          Minus sapiente, dolor delectus esse exercitationem et temporibus
+          accusamus, culpa, accusantium asperiores amet quod in porro. Nulla
+          corrupti adipisci quod quibusdam rerum reiciendis numquam dicta, nam
+          commodi fuga, modi debitis tempore sunt ab in incidunt a temporibus
+          consequatur. Beatae quaerat sapiente aperiam accusantium dolorem
+          reprehenderit asperiores, nulla veritatis? Sequi ab aliquam nam quasi
+          amet dolores, illo quae, quos corporis culpa quis, omnis repellendus
+          aspernatur soluta harum deserunt? Veniam natus, ipsam architecto
+          voluptas rerum, ea fuga et commodi repellendus delectus quas incidunt
+          reiciendis nemo accusantium excepturi. Sint expedita vitae magnam
+          natus amet quod ipsam non excepturi fuga repudiandae recusandae
+          delectus illum laboriosam maiores voluptatum, nam rerum sapiente
+          exercitationem quaerat voluptate consequuntur? Ipsa necessitatibus
+          accusantium alias odit magni adipisci! Neque debitis nemo fuga nobis
+          quas itaque? Molestias vitae tempore quisquam consequuntur modi
+          incidunt enim adipisci fuga in, tenetur porro illo obcaecati at
+          quaerat debitis velit repellat ea cumque sed quam. Cupiditate aliquid
+          quae corporis quidem est deleniti quam esse incidunt alias. Nesciunt
+          voluptas est dignissimos optio sint eligendi odio dolor impedit!
+          Possimus hic eum eius aperiam soluta autem iusto, quibusdam a fugit.
+          Esse repudiandae accusantium, assumenda accusamus magnam natus itaque
+          non repellat vero soluta fugiat officia quisquam excepturi earum ipsam
+          facere pariatur quam. Facilis ab expedita sint, alias reprehenderit
+          rem commodi maxime ipsum modi porro, earum doloremque quaerat odit
+          delectus dolore at tenetur repellendus consequatur quisquam
+          accusantium veniam. Ipsa, porro corporis voluptas facere hic saepe
+          quod repellendus, fuga nulla cum velit est dolores ea, quis enim ullam
+          odit beatae nam rerum! Nihil quod iste, autem inventore vel, fugit
+          optio totam magnam ipsam explicabo, adipisci necessitatibus ea
+          corporis?
+        </p>
+      </div>
     </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--Javasqrit kod för att skapa scrolleffecten av navbar-->
+    <script>
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-light", "shadow");
+        } else {
+          nav.classList.remove("bg-light", "shadow");
+        }
+      });
+    </script>
   </body>
 </html>
