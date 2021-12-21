@@ -97,7 +97,7 @@ button:hover, button a:hover{
     width: 100%;
     opacity: 1;
     background: rgba(0,0,0,.2);
-    transition: all 0.5s;
+    /*transition: all 0.3s;*/
     color: white;
     cursor:pointer;
     filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
@@ -126,4 +126,16 @@ button:hover, button a:hover{
     size: 120%;
     border-radius: 4px; 
     overflow: hidden; 
+ }
+.quote-card {
+   background-color: white;
+   padding: 25px;
+   text-align: center;
+   align-items: center;
+}
+
+
+ .quote{
+font-size: 120%;
+font-style: italic;
  }
