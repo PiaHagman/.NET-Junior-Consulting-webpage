@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The mamas and Sven</title>
-
+    <!--Bootstrap stylesheet-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!--Bootstrap javascrip länk-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
+    <!--generell stylesheet-->
     <link rel="stylesheet" href="style.css" />
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -26,8 +28,7 @@
       rel="stylesheet"
     />
   </head>
-
-  <body>
+  <body class="homepage">
     <header>
       <!-- NAVBAR-->
       <div class="fixed-navbar">
@@ -36,7 +37,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <a href="Index.html"
-              ><span class="logo-text"
+              ><span class="navbar-logo"
                 ><span class="line1">.NET</span><br /><span class="line2"
                   >Junior Consulting</span
                 ></span
@@ -56,10 +57,8 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- "STOR BILD NAVBAR FUNKTION" -->
-
             <!--.navbar-collapse determine when their content collapses behind a button. -->
+            <!-- "STOR BILD NAVBAR FUNKTION" -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <!-- ms-auto mb-2 mb-lg-0 placerar navbar placerars till höger-->
               <!--.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).-->
@@ -106,7 +105,6 @@
       - lägger till och tar bort bootstrapkod shadow och bg-light
       - <50 är när effecten ska kicka igång
     -->
-      <script src="js/bootstrap.bundle.min.js"></script>
       <script>
         var nav = document.querySelector("nav");
         window.addEventListener("scroll", function () {
@@ -119,48 +117,51 @@
       </script>
     </header>
 
-    <!-- Main content area-->
-    <div class="container">
-      <div class="container-content"></div>
+    <!-- Upper content area-->
+    <div class="container upper-content">
       <h1>Junior .NET developers</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat</p>
       <button>Hire us</button>
-      <div class="test">
+    </div>
+    <div class="container lower-content my-5 d-grid gap-5">
+      <div class="p-5 border">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab,
-          veritatis blanditiis, neque incidunt sapiente id ipsam perspiciatis
-          quo repellat ducimus quibusdam quas a labore, eligendi adipisci
-          deleniti nostrum quia quod maxime distinctio itaque quaerat minima!
-          Minus sapiente, dolor delectus esse exercitationem et temporibus
-          accusamus, culpa, accusantium asperiores amet quod in porro. Nulla
-          corrupti adipisci quod quibusdam rerum reiciendis numquam dicta, nam
-          commodi fuga, modi debitis tempore sunt ab in incidunt a temporibus
-          consequatur. Beatae quaerat sapiente aperiam accusantium dolorem
-          reprehenderit asperiores, nulla veritatis? Sequi ab aliquam nam quasi
-          amet dolores, illo quae, quos corporis culpa quis, omnis repellendus
-          aspernatur soluta harum deserunt? Veniam natus, ipsam architecto
-          voluptas rerum, ea fuga et commodi repellendus delectus quas incidunt
-          reiciendis nemo accusantium excepturi. Sint expedita vitae magnam
-          natus amet quod ipsam non excepturi fuga repudiandae recusandae
-          delectus illum laboriosam maiores voluptatum, nam rerum sapiente
-          exercitationem quaerat voluptate consequuntur? Ipsa necessitatibus
-          accusantium alias odit magni adipisci! Neque debitis nemo fuga nobis
-          quas itaque? Molestias vitae tempore quisquam consequuntur modi
-          incidunt enim adipisci fuga in, tenetur porro illo obcaecati at
-          quaerat debitis velit repellat ea cumque sed quam. Cupiditate aliquid
-          quae corporis quidem est deleniti quam esse incidunt alias. Nesciunt
-          voluptas est dignissimos optio sint eligendi odio dolor impedit!
-          Possimus hic eum eius aperiam soluta autem iusto, quibusdam a fugit.
-          Esse repudiandae accusantium, assumenda accusamus magnam natus itaque
-          non repellat vero soluta fugiat officia quisquam excepturi earum ipsam
-          facere pariatur quam. Facilis ab expedita sint, alias reprehenderit
-          rem commodi maxime ipsum modi porro, earum doloremque quaerat odit
-          delectus dolore at tenetur repellendus consequatur quisquam
-          accusantium veniam. Ipsa, porro corporis voluptas facere hic saepe
-          quod repellendus, fuga nulla cum velit est dolores ea, quis enim ullam
-          odit beatae nam rerum! Nihil quod iste, autem inventore vel, fugit
-          optio totam magnam ipsam explicabo, adipisci necessitatibus ea
-          corporis?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          repellendus, rerum blanditiis error perspiciatis alias explicabo,
+          culpa reprehenderit quam asperiores et reiciendis magnam. Beatae
+          tempore incidunt necessitatibus numquam delectus quos!
+        </p>
+      </div>
+      <div class="p-5 border">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          repellendus, rerum blanditiis error perspiciatis alias explicabo,
+          culpa reprehenderit quam asperiores et reiciendis magnam. Beatae
+          tempore incidunt necessitatibus numquam delectus quos!
+        </p>
+      </div>
+      <div class="p-5 border">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          repellendus, rerum blanditiis error perspiciatis alias explicabo,
+          culpa reprehenderit quam asperiores et reiciendis magnam. Beatae
+          tempore incidunt necessitatibus numquam delectus quos!
+        </p>
+      </div>
+      <div class="p-5 border">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          repellendus, rerum blanditiis error perspiciatis alias explicabo,
+          culpa reprehenderit quam asperiores et reiciendis magnam. Beatae
+          tempore incidunt necessitatibus numquam delectus quos!
+        </p>
+      </div>
+      <div class="p-5 border">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          repellendus, rerum blanditiis error perspiciatis alias explicabo,
+          culpa reprehenderit quam asperiores et reiciendis magnam. Beatae
+          tempore incidunt necessitatibus numquam delectus quos!
         </p>
       </div>
     </div>

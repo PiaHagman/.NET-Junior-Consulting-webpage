@@ -3,7 +3,8 @@
   padding: 0;
   font-family: "Noto Serif", serif;
 }
-body {
+body,
+.homepage {
   background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg) no-repeat;
   background-size: cover;
   height: 500px;
@@ -16,6 +17,14 @@ body {
   width: 100%;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #927374;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #7a090d;
+}
+
 .navbar a {
   text-decoration: none;
 }
@@ -23,31 +32,13 @@ body {
 .navbar-toggler-icon {
   border-color: #927374;
 }
-
-.logo-text {
-  float: left;
+/*kommer ersättas*/
+.navbar-logo {
   font-size: 20px;
   color: #927374;
 }
-.logo-text .line1 {
-  font-size: 50px;
-}
-
-.container {
-  text-align: center;
-}
-
-.container-content {
-  margin-top: 250px;
-}
-
-.container-content h1 {
-  font-size: 350%;
-  color: #927374;
-}
-
-.container-content p {
-  font-size: 150%;
+.navbar-logo .line1 {
+  font-size: 40px;
 }
 
 button {
@@ -73,7 +64,17 @@ button a:hover {
   background-color: #19383d;
   color: white;
 }
-.test {
-  border: 2px solid black;
-  margin-top: 1000px;
+
+.homepage .upper-content {
+  margin-top: 250px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.homepage .upper-content h1 {
+  font-size: 300%;
+}
+
+.homepage .upper-content p {
+  font-size: 150%;
 }
