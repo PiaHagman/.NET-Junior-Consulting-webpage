@@ -24,3 +24,7 @@ Ser också detta som ett heltidsjobb, men är lite mer begränsad än vanligt un
 Är på annan ort 23 december - 5 januari, men om vi känner att det saknas tid så kommer 
 jag prioritera gruppen framför ledighet. :) Hoppas därför vi kan komma igång redan 
 denna veckan och nästa för att se vart det leder. Ses också gärna irl i januari.
+
+
+Sven Axelsson ser denna uppgiften som ett heltidsjobb kan sitta under julveckorna utan något problem. 
+Jag brukar inte vara i skolan men kan komma dit ifall ni vill mötas upp i person jag kan sitta under arbetsdagarna från klockan 08:00-16:00 
