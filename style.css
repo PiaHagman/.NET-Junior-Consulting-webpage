@@ -10,11 +10,12 @@ font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #927374;
+  color: #19383d;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #7a090d;
+  color: #527177;
+  font-weight: bolder;
 }
 
 .navbar a {
