@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+.homepage {
+  background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg) no-repeat;
+  background-size: cover;
+  height: 200px;
+  background-position: center;
+}
+
+.homepage .upper-content {
+  margin-top: 250px;
+  margin-bottom: 400px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.homepage .upper-content h1 {
+  font-size: 300%;
+}
+
+.homepage .upper-content p {
+  font-size: 125%;
+}
+
+.homepage .lower-content {
+  margin-bottom: 30px;
+}
+
+.row .col-md-4 {
+  text-align: center;
+}
