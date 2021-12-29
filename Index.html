@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The mamas and Sven</title>
+
+    <!--Generel stylesheet-->
+    <link rel="stylesheet" href="styleGenerel.css" />
+    <!--WelcomePage stylesheet-->
+    <link rel="stylesheet" href="styleWelcomePage.css" />
     <!--Bootstrap stylesheet-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -12,37 +17,39 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!--Font rubriker google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!--Bootstrap javascrip länk-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <!--generell stylesheet-->
-    <link rel="stylesheet" href="style.css" />
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <!--Iconer från font-awesome-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body class="homepage">
     <header>
       <!-- NAVBAR-->
       <div class="fixed-navbar">
-        <!--Navbar-light stylar navbar med förinställda färger-->
         <!--.navbar-expand-lg determine when their content collapses behind a button. -->
+        <!--.navbar-light stylar med förinställda färger. -->
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <a href="Index.html"
-              ><span class="navbar-logo"
-                ><span class="line1">.NET</span><br /><span class="line2"
-                  >Junior Consulting</span
-                ></span
-              ></a
-            >
+              ><img class="logo" src="/images/logo.png" />
+            </a>
 
             <!--.navbar-toggler determine when their content collapses behind a button. 
             HAMBURGEKNAPP FUNKTIONEN-->
@@ -102,7 +109,7 @@
 
       <!--
       Javasqrit kod för att skapa scrolleffecten på navbar
-      - lägger till och tar bort bootstrapkod shadow och bg-light
+      - lägger till och tar bort bootstrapkod shadow och bg-light på nav
       - <50 är när effecten ska kicka igång
       -->
       <script>
@@ -120,7 +127,7 @@
     <!-- Upper content area-->
     <div class="container upper-content">
       <h1 class="logo">
-        Junior .NET<br />
+        .NET Junior<br />
         Consulting
       </h1>
       <p>
@@ -130,11 +137,14 @@
       </p>
       <button>Kontakta oss</button>
     </div>
+
     <div class="container lower-content">
       <div class="row">
         <!--Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use .col-4. md midsize-->
         <div class="col-md-4">
-          <div class="box-Icon">ICON</div>
+          <span class="icon">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </span>
           <div class="box-content">
             <div class="box-title">Utbildning</div>
             <p class="box-text">
@@ -148,7 +158,9 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="box-Icon">ICON</div>
+          <span class="icon">
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+          </span>
           <div class="box-content">
             <div class="box-title">Portfolio</div>
             <p class="box-text">
@@ -162,7 +174,9 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="box-Icon">ICON</div>
+          <span class="icon">
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+          </span>
           <div class="box-content">
             <div class="box-title">Ansvarstagande & Engagemang</div>
             <p class="box-text">
