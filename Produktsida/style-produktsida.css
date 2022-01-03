@@ -51,6 +51,9 @@ button:hover, button a:hover{
     background-color: #19383d; 
     color: white;
 }
+.active{
+   font-weight: bolder;
+}
 
  .topbanner{
     background-image: url('images/office2.jpg');

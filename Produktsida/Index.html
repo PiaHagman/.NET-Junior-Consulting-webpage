@@ -68,7 +68,7 @@
               <!--Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.-->
               <li class="nav-item dropdown profile-dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle active"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -124,7 +124,7 @@
           <p>Vi erbjuder kvalificerade konsulttjänster till företag och organisationer 
             inom backend- och frontendutveckling. Att vi är juniorer är vår styrka. 
             Vår kunskapsbas är bred och <em>uppdaterad</em>.  
-            Vi koll på trenderna  och med hjälp av smarta system och enkla gränssnitt förverkligar vi dem. 
+            Vi har koll på trenderna  och med hjälp av smarta system och enkla gränssnitt förverkligar vi dem. 
             <br><br>Allt till förmånliga priser.</p>
         </div>
         <div class="my-container">
@@ -157,22 +157,34 @@
       </div>
     </div>
 
-    <div class="card my-image-card">
-      <a href="webbsidor.html">
-      <img src="images/coffee.jpg" class="card-img-top" alt="">
+    <div class="card my-image-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img src="images/coffee.jpg" class="card-img-top" alt="" >
       <div class="card-img-overlay">
         <h5 class="card-title">Träffa oss för en kaffe</h5>
       </div>
-          <!-- <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button>
-              <a href="Index.html">Go somewhere</a>
-            </button>
-          </div> -->
-        </a>
-    </div>
 
+      <!--Pop-up Modal-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Vi dricker gärna kaffe med dig!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Skriv in din mejladress så kontaktar vi dig inom 24 timmar.</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <button type="submit">Skicka</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -193,14 +205,6 @@
                   <div class="card-img-overlay ">
                     <h5 class="card-title">Backendutveckling i C#</h5>
                   </div>
-                    
-                      <!-- <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button>
-                          <a href="Index.html">Go somewhere</a>
-                        </button>
-                      </div> -->
                   </a>
                 </div>
 
@@ -260,278 +264,6 @@
 
 
 
-
-
-
-
-
-<!-- 
-
-    <section class="p-5">
-      <div class="container-fluid">
-        <div class="row">
-
-          <div class="col-md" >
-            <div class="card" >
-              <img src="images/mobil.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-md" >
-            <div class="row">
-              <div class="card" >
-                <img src="images/dator.jpg" class="card-img-top" alt="">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-              <div class="row">
-                <div class="card" >
-                  <img src="images/dator.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md" >
-            <div class="row">
-              <div class="card" >
-                <img src="images/dator.jpg" class="card-img-top" alt="">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-              <div class="row">
-                <div class="card" >
-                  <img src="images/dator.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    
-    <section class="p-5">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md" > 
-            <div class="card text-white">
-              <img class="img-fluid" src="images/dator.jpg" class="rounded-1 " alt="">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Backendutveckling i C#</h5>
-              </div>
-            </div>
-          </div> 
-          
-          <div class="col-md" > 
-            <div class="card text-white">
-              <img class="img-fluid" src="images/dator.jpg" class="rounded-1 " alt="">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Backendutveckling i C#</h5>
-              </div>
-            </div>
-          </div>  
-
-          <div class="col-md-4" >
-            <div class="card" style="width: 18rem;">
-              <img src="images/mobil.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-8">
-            <img class="img-fluid" src="images/office.jpg" alt="">
-          </div>
-        </div>
-
-        
-      </div>
-    </section>
-
-    Produktkort
-    <section class="p-5">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-6" > 
-            <div class="card text-white">
-              <img class="img-fluid" src="images/dator.jpg" class="rounded-1 " alt="">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Backendutveckling i C#</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3" >
-            <div class="card" style="width: 18rem;">
-              <img src="images/mobil.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-   
-
-</section>
-
-<section>
-  <div class="container">
-   
-    <div class="row">
-      <div class="col-md-8">
-        <div class="container-fluid">
-          <div class="row"> 
-
-            <div class="col-md" > 
-              <div class="card text-white">
-                <img class="img-fluid" src="images/dator.jpg" class="rounded-1 " alt="">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Backendutveckling i C#</h5>
-                </div>
-              </div>
-            </div> 
-            
-            <div class="col-md" > 
-              <div class="card text-white">
-                <img class="img-fluid" src="images/dator.jpg" class="rounded-1 " alt="">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Backendutveckling i C#</h5>
-                </div>
-              </div>
-            </div>  
-          </div>  
-
-          <div class="row">
-            <img class="img-fluid" src="images/office.jpg" alt="">
-          </div>
-
-          <div class="col-md-4">
-            <div class="container-fluid">
-              <div class="row"> 
-                <div class="col">
-                  <div class="card" >
-                    <img src="images/mobil.jpg" class="card-img-top" alt="">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      
-
-      </div>
-
-
-
-
-
-</section>
-
-
-
-<section class="p-5">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md" > 
-        <div class="card text-white">
-          <img class="img-fluid" src="images/dator.jpg" class="rounded-1 " alt="">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Backendutveckling i C#</h5>
-          </div>
-        </div>
-      </div> 
-      
-      <div class="col-md" > 
-        <div class="card text-white">
-          <img class="img-fluid" src="images/dator.jpg" class="rounded-1 " alt="">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Backendutveckling i C#</h5>
-          </div>
-        </div>
-      </div>  
-
-      <div class="col-md-4" >
-        <div class="card" style="width: 18rem;">
-          <img src="images/mobil.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div class="col-8">
-        <img class="img-fluid" src="images/office.jpg" alt="">
-      </div>
-    </div>
-
-    
-  </div>
-</section>
-
- -->
 <footer>
 
 </footer>
