@@ -8,8 +8,7 @@ body {
 }
 body,
 .homepage {
-  background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg) no-repeat;
-  background-size: cover;
+  background: url(/images/bethany-legg-mobile-alt2.jpg) no-repeat;
   height: 100%;
   background-position: center;
 }
@@ -31,12 +30,14 @@ body,
 }
 
 .upper-area h1 {
-  padding: 40px;
+  margin-top: 90px;
+  padding: 20px;
+  font-size: 300%;
+  text-align: center;
   text-shadow: #386369 1px 1px 1px;
 }
 
 .upper-area p {
-  padding: 30px;
   text-align: center;
 }
 
@@ -54,6 +55,7 @@ body,
   align-items: center;
 }
 
+/*bara för att fylla ut*/
 .lower-area {
   grid-area: 5/1/6/4;
   display: flex;
@@ -66,10 +68,22 @@ body,
   justify-content: center;
   align-items: center;
 
-  margin: 10px;
+  background-color: rgba(230, 237, 237, 0.8);
+  /*
+  Fixa så content inte går ut längre än navbaren.
+  Bildjävlen - använda olika beroende på desktop
+
+  */
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
   border: #386369 2px solid;
-  padding: 5%;
+  padding: 2%;
   text-align: center;
+}
+.box button {
+  margin-bottom: 10px;
+  border: #386369 2px solid;
 }
 .box .fa {
   color: #152d30;
@@ -84,6 +98,11 @@ body,
 }
 
 @media (min-width: 600px) {
+  body,
+  .homepage {
+    background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg) no-repeat;
+    background-size: cover;
+  }
   .upper-area {
   }
 
@@ -102,5 +121,12 @@ body,
   }
 
   .lower-area {
+  }
+
+  .box {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 500px;
+    background-color: rgba(230, 237, 237, 0.5);
   }
 }
