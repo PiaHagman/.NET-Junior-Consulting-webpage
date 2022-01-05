@@ -4,115 +4,131 @@
     padding: 20px;
 } */
 body {
-    background-color: #e6eded;
-    color:#19383d; /*Text-färg*/
- }
+  background-color: #e6eded;
+  color: #19383d; /*Text-färg*/
+}
 
- h1{
-    font-family: 'Noto Serif', serif;
-    font-size: 350%;
- }
+h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 300%;
+}
 
 a {
-   text-decoration: none;
-   color:#19383d;
-   
-   &:hover {
-   color: white;
-   }
+  text-decoration: none;
+  color: #19383d;
+
+  &:hover {
+    color: white;
+  }
 }
 
-.active{
-   font-weight: bolder;
+.active {
+  font-weight: bolder;
 }
 
-.topbanner{
-   background-image: url('images/office2.jpg');
-   height: 500px;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: relative;
-   clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
- }
+.topbanner {
+  background-image: url("images/office2.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+}
 
- .topbanner-navpage{
-   opacity: 0.5;
- 
- } 
- .topbanner-text{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.topbanner-navpage {
+  opacity: 0.5;
+}
+.topbanner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4f5a57;
+}
+
+.my-column-container,
+.my-row-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 3px solid red; */
+}
+
+.my-row-container {
+  flex-direction: row;
+}
+
+.my-card,
+.my-image-card {
+  margin-bottom: 25px;
+  /* border: 3px solid black; */
+  border: none;
+
+  &:hover {
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    /*transition: all 0.3s;*/
+    color: white;
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
+  }
+}
+
+.my-image-card {
+  background: #e6eded;
+  color: #19383d;
+  margin-bottom: 21px;
+
+  &:hover {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
     color: #4f5a57;
- }
-
- .my-column-container, .my-row-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* border: 3px solid red; */
- }
-
- .my-row-container{
-    flex-direction: row;
- }
- 
- .my-card, .my-image-card{
-    margin-bottom: 25px;
-    /* border: 3px solid black; */
-    border: none;
-
-    &:hover{
-      display: block;
-      height: 100%;
-      width: 100%;
-      opacity: 1;
-      background: rgba(0,0,0,.2);
-      /*transition: all 0.3s;*/
-      color: white;
-      cursor:pointer;
-      filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
-    }
- }
-
-
- .my-image-card{
-   background: #e6eded;
-   color: #19383d;
-   margin-bottom: 21px;
-
-   &:hover{
-   display: block;
-   height: 100%;
-   width: 100%;
-   background: rgba(255, 255, 255, 0);
-   cursor:pointer;
-   filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
-   color: #4f5a57;
-   font-weight: 300;
-   }
+    font-weight: 300;
+  }
 }
- 
-.video{
-    border-radius: 4px;
-    size: 120%;
-    border-radius: 4px; 
-    overflow: hidden; 
- }
+
+.video {
+  border-radius: 4px;
+  size: 120%;
+  border-radius: 4px;
+  overflow: hidden;
+}
 .quote-card {
-   background-color: white;
-   padding: 25px;
-   text-align: center;
-   align-items: center;
-   
-   & p {
-      font-size: 120%;
-      font-style: italic;
-   }
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+  align-items: center;
+
+  & p {
+    font-size: 120%;
+    font-style: italic;
+  }
 }
 
+@media  (max-width: 600px) {
+   .my-logo{
+      width: 70%;
+   }
+   .topbanner{
+      background-image: none;
+      clip-path: none;
+      margin-top: 150px;
+      height: 300px;
+   }
+   .topbanner-text h1{
+      font-size: 40px;
+   }
+   .p-5{
+      padding:5px!important;
+   }
 
- 
+}

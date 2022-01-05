@@ -11,8 +11,8 @@ body {
 }
 
 h1 {
-  font-family: 'Noto Serif', serif;
-  font-size: 350%;
+  font-family: "Noto Serif", serif;
+  font-size: 300%;
 }
 
 a {
@@ -53,7 +53,8 @@ a:hover {
   color: #4f5a57;
 }
 
-.my-column-container, .my-row-container {
+.my-column-container,
+.my-row-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,13 +75,15 @@ a:hover {
           flex-direction: row;
 }
 
-.my-card, .my-image-card {
+.my-card,
+.my-image-card {
   margin-bottom: 25px;
   /* border: 3px solid black; */
   border: none;
 }
 
-.my-card:hover, .my-image-card:hover {
+.my-card:hover,
+.my-image-card:hover {
   display: block;
   height: 100%;
   width: 100%;
@@ -130,5 +133,24 @@ a:hover {
 .quote-card p {
   font-size: 120%;
   font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .my-logo {
+    width: 70%;
+  }
+  .topbanner {
+    background-image: none;
+    -webkit-clip-path: none;
+            clip-path: none;
+    margin-top: 150px;
+    height: 300px;
+  }
+  .topbanner-text h1 {
+    font-size: 40px;
+  }
+  .p-5 {
+    padding: 5px !important;
+  }
 }
 /*# sourceMappingURL=style-produktsida.css.map */
