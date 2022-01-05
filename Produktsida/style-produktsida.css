@@ -57,7 +57,6 @@ button:hover, button a:hover{
 
  .topbanner{
     background-image: url('images/office2.jpg');
-    background-color: #96726e;
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,6 +65,12 @@ button:hover, button a:hover{
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
     clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
  }
+
+ .topbanner-navpage{
+   opacity: 0.5;
+ 
+ } 
+
 
  .topbanner-text{
     text-align: center;
@@ -76,6 +81,7 @@ button:hover, button a:hover{
     color: #4f5a57;
  }
 
+ 
 
  .my-column-container, .my-row-container{
     display: flex;
@@ -120,9 +126,7 @@ button:hover, button a:hover{
    filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
    color: #4f5a57;
    font-weight: 300;
-
  }
-
 
  .video{
     border-radius: 4px;
@@ -136,9 +140,9 @@ button:hover, button a:hover{
    text-align: center;
    align-items: center;
 }
-
-
  .quote{
 font-size: 120%;
 font-style: italic;
  }
+
+ 
