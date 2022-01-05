@@ -50,3 +50,27 @@ button a:hover {
 button a:hover {
   background-color: transparent;
 }
+
+.btn-secondary {
+  background-color: #527177;
+  border: #386369 2px solid;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.btn-secondary:focus {
+  background-color: #527177;
+  border: #386369 2px solid;
+  border-radius: 4px;
+}
+
+.btn-secondary:hover {
+  background-color: #19383d;
+  border: #386369 2px solid;
+  border-radius: 4px;
+}
+
+.btn-secondary:active {
+  border: #386369 2px solid;
+  box-shadow: none;
+}
