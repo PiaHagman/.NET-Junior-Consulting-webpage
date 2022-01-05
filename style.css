@@ -33,6 +33,10 @@ font-weight: bold;
 .navbar-logo .line1 {
   font-size: 40px;
 }
+.navbar button:hover,
+button a:hover {
+  background-color: transparent;
+}
 
 button {
   text-align: center;
