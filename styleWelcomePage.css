@@ -8,7 +8,8 @@ body {
 }
 body,
 .homepage {
-  background: url(/images/bethany-legg-mobile-alt2.jpg) no-repeat;
+  background: rgb(220, 228, 227, 0.3) url(/images/bethany-legg-mobile-alt2.jpg)
+    no-repeat;
   height: 100%;
   background-position: center;
 }
@@ -69,15 +70,11 @@ body,
   align-items: center;
 
   background-color: rgba(230, 237, 237, 0.8);
-  /*
-  Fixa så content inte går ut längre än navbaren.
-  Bildjävlen - använda olika beroende på desktop
-
-  */
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 30px;
   border: #386369 2px solid;
+  border-radius: 5px;
   padding: 2%;
   text-align: center;
 }
@@ -126,7 +123,6 @@ body,
   .box {
     margin-left: 20px;
     margin-right: 20px;
-    height: 500px;
     background-color: rgba(230, 237, 237, 0.5);
   }
 }
