@@ -42,6 +42,10 @@ body,
   text-align: center;
 }
 
+.popover {
+  z-index: 1060 !important;
+}
+
 .divder-area {
   grid-area: 3/1/4/4;
   display: flex;
@@ -100,29 +104,13 @@ body,
     background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg) no-repeat;
     background-size: cover;
   }
-  .upper-area {
-  }
-
-  .upper-area h1 {
-  }
-
-  .upper-area p {
-  }
-
-  .divder-area {
-  }
 
   .middle-area {
     flex-direction: row;
     align-items: flex-start;
   }
 
-  .lower-area {
-  }
-
   .box {
-    margin-left: 20px;
-    margin-right: 20px;
     background-color: rgba(230, 237, 237, 0.5);
   }
 }

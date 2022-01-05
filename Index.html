@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The mamas and Sven</title>
+    <title>.NET Junior Consulting | Billiga It-tjänster</title>
 
     <!--Bootstrap stylesheet-->
     <link
@@ -124,63 +124,39 @@
           Vi erbjuder tjänster inom backend, frontend och fullstack. Vi skapar
           allt från hemsidor och appar till pålitliga databaser och med våra
           juniora webbutvecklare kan du vara säker på att få del av den senaste
-          inom IT. Allt till ett förmånliga och billiga priser.
+          inom IT. Allt till förmånliga och billiga priser.
         </p>
-        <!-- Button trigger modal -->
-        <button data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Kontakta oss
-        </button>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
+        <!--modal-->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                  Vi återkommer inom 24h!
-                </h5>
-                <button
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
+                <h5 class="modal-title" id="exampleModalToggleLabel">Skriv in din email så kontaktar vi dig!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="name@example.com"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Meddelande</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
               </div>
               <div class="modal-footer">
-                <button>Skicka</button>
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Skicka</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2">Tack! Vi återkommer om 24h!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Kontakta oss</a>
       <div class="divder-area"><span></span></div>
       <div class="middle-area">
         <!--TODO vad innebär det om jag döper det till container istället för box?-->
@@ -189,37 +165,35 @@
             <i class="fa fa-book" aria-hidden="true"></i>
           </span>
 
-          <div class="box-title">Om oss</div>
+          <div class="box-title">Erfarenhet</div>
           <p class="box-text">
-            man skulle kunna ha en sektion om <strong>utbildnignen</strong> vi
-            har här istället? Eller ska man ha båda?. Praesentium repellendus,
-            rerum blanditiis error perspiciatis alias explicabo, culpa
-            reprehenderit quam asperiores et reiciendis magnam. Beatae tempore
-            incidunt necessitatibus numquam delectus quos!
+            Våra juniora utvecklare är alla utbildade Webbutvecklare inom .NET
+            på EC Utbildningen och har en bred och praktiskt kunskap inom
+            frontend, backend och fullstack. Att vi är juniora är vår styrka och
+            gör att vi kan erbjuda it-tjänster till ett förmåligt pris och
+            fortfarande garantera hög kvalité
           </p>
-          <button>Läs mer</button>
+          <button>Om oss</button>
         </div>
         <div class="box">
           <span class="box-icon">
             <i class="fa fa-bolt fa-lg" aria-hidden="true"></i>
           </span>
-          <div class="box-title">Blogg</div>
+          <div class="box-title">Uppdrag</div>
           <p class="box-text">
-            man skulle kunna ha en sektion om
-            <strong>tidigare uppdrag</strong> här istället? Eller ska man ha
-            båda?. Praesentium repellendus, rerum blanditiis error perspiciatis
-            alias explicabo, culpa reprehenderit quam asperiores et reiciendis
-            magnam. Beatae tempore incidunt necessitatibus numquam delectus
-            quos!
+            Behöver ditt företag hjälp med ta fram en ny hemsida? Eller har ni
+            utvecklat. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eum modi quo natus sint consequatur, numquam eveniet fuga ut maiores
+            eius!
           </p>
-          <button>Läs mer</button>
+          <button>Tänster</button>
         </div>
         <div class="box">
           <span class="box-icon">
             <i class="fa fa-handshake-o" aria-hidden="true"></i>
           </span>
 
-          <div class="box-title">Tjänster</div>
+          <div class="box-title">Engagemang och Ansvarstagande</div>
           <p class="box-text">
             man skulle kunna ha en sektion om <strong>Engagemang</strong> här
             istället? Eller ska man ha båda?. Praesentium repellendus, rerum
@@ -236,11 +210,13 @@
     </div>
 
     <!--Bootstrap javascrip länk-->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </body>
 </html>
 
