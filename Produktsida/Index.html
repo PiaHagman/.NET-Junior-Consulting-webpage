@@ -106,10 +106,10 @@
     - <50 är när effecten ska kicka igång
     -->
     
-    <script class="script">
-      var storlek = window.innerWidth; 
+    <script>
+   /*    var storlek = window.innerWidth; 
       
-      if (storlek < 600) { 
+      if (storlek < 600) {  */
       var nav = document.querySelector("nav");
       window.addEventListener("scroll", function () {
         if (window.pageYOffset > 50 ) {
@@ -118,7 +118,7 @@
           nav.classList.remove("bg-light", "shadow");
         }
       });
-    }
+   /*  } */
     </script>
   </header>
 
@@ -132,9 +132,6 @@
             Vi har koll på trenderna  och med hjälp av smarta system och enkla gränssnitt förverkligar vi dem. 
             <br><br><strong>Allt till förmånliga priser.</strong></p>
         </div>
-        <div class="my-container">
-
-        </div>
       </div>
     </section> 
 
@@ -146,11 +143,10 @@
 <div class="col-md" >
   <div class="my-column-container">
     <div>
-      
       <div class="card my-card " >
         <a href="webbsidor.html">
           <img src="images/mobil.jpg" class="card-img-top img-laptop" alt="">
-          <img src="images/desk.jpeg" class="card-img-top img-mobile" alt="">
+          <img src="images/mobil-landscape.jpg" class="card-img-top img-mobile" alt="">
 
             <div class="card-body">
               <h5 class="card-title">Webbsidor</h5>
@@ -223,7 +219,8 @@
                 <div>
                   <div class="card my-card" >
                     <a href="javascript.html">
-                      <img src="images/javascript.jpg" class="card-img-top" alt="">
+                      <img src="images/javascript.jpg" class="card-img-top img-laptop" alt="">
+                      <img src="images/javascript-landscape.jpg" class="card-img-top img-mobile" alt="">
                         <div class="card-body">
                           <h5 class="card-title">Javascript</h5>
                           <p class="card-text">Vi skapar interaktiva, dynamiska hemsidor som går att interagera med.</p>
@@ -233,9 +230,10 @@
                 </div>
 
                 <div class="card my-image-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <img src="images/coffee.jpg" class="card-img-top" alt="" >
+                  <img src="images/coffee.jpg" class="card-img-top img-laptop" alt="" >
+                  <img src="images/coffee_landscape.jpg" class="card-img-top img-mobile" alt="" >
                   <div class="card-img-overlay">
-                    <h5 class="card-title">Träffa oss för en kaffe</h5>
+                    <h5 class="card-title card-title-coffee">Träffa oss för en kaffe</h5>
                   </div>     
                 </div>
                 <!--Pop-up Modal-->

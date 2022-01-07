@@ -30,7 +30,7 @@ a:hover {
 
 .topbanner {
   background-image: url("images/office2.jpg");
-  height: 600px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,7 +134,69 @@ button a.card-link:hover {
   height: 0;
 }
 
+/*webbsidor.html-------------------*/
+.my-background {
+  background-color: white;
+  height: 650px;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+}
+
+.my-top-row-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 8%;
+  height: auto;
+}
+
+.image {
+  width: 80%;
+}
+
+.tjanst-img, .tjanst-rubrik-ingress {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 5% 5% 0 0;
+}
+
+.my-row-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2%;
+}
+
+.tjanst-brodtext-1, .tjanst-brodtext-2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding-right: 50px;
+}
+
+/*Responsivitet för mobil*/
 @media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
   .my-logo {
     width: 70%;
   }
@@ -149,15 +211,13 @@ button a.card-link:hover {
     background-image: none;
     -webkit-clip-path: none;
             clip-path: none;
-    margin-top: 150px;
-    height: 300px;
-  }
-  .topbanner-text h1 {
-    font-size: 40px;
+    margin-top: 100px;
+    height: 400px;
   }
   .p-5 {
     padding: 5px !important;
   }
+  /*@media index.html-------------------*/
   .my-card:hover, .my-image-card:hover {
     -webkit-filter: none;
             filter: none;
@@ -171,6 +231,51 @@ button a.card-link:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    position: relative;
+  }
+  .card-title-coffee {
+    color: white;
+  }
+  .card-title, .card-text {
+    text-align: center;
+  }
+  /*@ media webbsidor.html----------------*/
+  .my-background {
+    background-color: white;
+    height: 450px;
+    /*  background-image: url("images/mobil.jpg");
+  background-position: center;
+  background-size: cover; 
+  // opacity: 0.3;
+  TODO https://sebhastian.com/background-image-opacity-css/
+  */
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+  }
+  .my-top-row-container, .my-row-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    opacity: 1;
+  }
+  .my-row-container {
+    margin-top: 30px;
+  }
+  .tjanst-rubrik-ingress {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin-top: 5%;
+    padding: 5%;
+    text-align: center;
+    opacity: 1;
+  }
+  .tjanst-brodtext-1, .tjanst-brodtext-2 {
+    padding: 0% 10% 0 10%;
+  }
+  .image {
+    display: none;
   }
 }
 /*# sourceMappingURL=style-produktsida.css.map */

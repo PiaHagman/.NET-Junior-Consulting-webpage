@@ -29,7 +29,7 @@ a {
 
 .topbanner {
   background-image: url("images/office2.jpg");
-  height: 600px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,7 +119,51 @@ color: white;
   
 }
 
+/*webbsidor.html-------------------*/
+.my-background{
+  background-color: white;
+  height: 650px;
+  clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+}
+.my-top-row-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-end;
+  padding-top: 8%;
+  height: auto;
+}
+
+.image{
+  width: 80%;
+  
+}
+.tjanst-img, .tjanst-rubrik-ingress{
+  flex: 1 1 50%; 
+  padding: 5% 5% 0 0;
+}
+
+.my-row-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2%;
+
+  
+}
+.tjanst-brodtext-1, .tjanst-brodtext-2{
+  flex: 1 1 50%;
+  padding-right: 50px;
+
+  
+}
+
+/*Responsivitet för mobil*/
 @media (max-width: 600px) {
+
+  h1 {
+    font-size: 40px;
+  }
   .my-logo {
     width: 70%;
   }
@@ -135,16 +179,14 @@ color: white;
   .topbanner {
     background-image: none;
     clip-path: none;
-    margin-top: 150px;
-    height: 300px;
+    margin-top: 100px;
+    height: 400px;
   }
-  .topbanner-text h1 {
-    font-size: 40px;
-  }
+  
   .p-5 {
     padding: 5px !important;
   }
- 
+/*@media index.html-------------------*/
   .my-card:hover, .my-image-card:hover{
     filter: none;
   }
@@ -152,9 +194,58 @@ color: white;
   .img-laptop{
     visibility: hidden;
     height: 0;
+    
   }
   .img-mobile{
     visibility:visible;
     height: fit-content;
+    position: relative;
+    //align-items: flex-start;
   }
+  .card-title-coffee{
+    color: white;
+  }
+  .card-title, .card-text{
+text-align: center;
+  }
+
+/*@ media webbsidor.html----------------*/
+.my-background{
+  background-color: white;
+  height: 450px;
+ /*  background-image: url("images/mobil.jpg");
+  background-position: center;
+  background-size: cover; 
+  // opacity: 0.3;
+  TODO https://sebhastian.com/background-image-opacity-css/
+  */
+  clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+}
+
+.my-top-row-container, .my-row-container{
+  flex-direction: column;
+  opacity: 1;
+}
+
+.my-row-container{
+  margin-top: 30px;
+}
+
+.tjanst-rubrik-ingress{
+  flex: 1 1 100%; 
+  margin-top: 5%;
+  padding: 5%;
+  text-align: center;
+  opacity: 1;
+  
+  //border: 3px solid black;
+}
+
+.tjanst-brodtext-1, .tjanst-brodtext-2{
+  padding: 0% 10% 0 10%;
+}
+
+.image{
+  display: none;
+}
 }

@@ -30,7 +30,40 @@
   </head>
 
   <body>
-    <header>
+    <!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Koden nedan talar om för webbläsaren att enhetens skärmbredd ska 
+   användas och att sidan inte ska zoomas in när sidan laddas första gången.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Länk till css-filer-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style-produktsida.css">
+
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+
+    <!--Font rubriker google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <!--Font body google fonts-->
+
+
+    <title>Webbsidor</title>
+  </head>
+
+
+  <body>
+<header>
     <div class="fixed-navbar">
       <!--Navbar-light stylar navbar med förinställda färger-->
       <!--.navbar-expand-lg determine when their content collapses behind a button. -->
@@ -38,7 +71,7 @@
         <div class="container">
           <a href="Index.html">
             <span class="navbar-logo">
-              <img src="images/logo.png" alt="Företagslogga">
+              <img src="images/logo.png" alt="Företagslogga" class="my-logo">
               </span
             ></a
           >
@@ -104,32 +137,48 @@
     - lägger till och tar bort bootstrapkod shadow och bg-light
     - <50 är när effecten ska kicka igång
     -->
+    
     <script>
+      /* var storlek = window.innerWidth; 
+      
+      if (storlek < 600) {  */
       var nav = document.querySelector("nav");
       window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 50) {
+        if (window.pageYOffset > 50 ) {
           nav.classList.add("bg-light", "shadow");
         } else {
           nav.classList.remove("bg-light", "shadow");
         }
       });
+   /*  } */
     </script>
-    </header>
+  </header>
 
-    <section>
-      <div class="topbanner topbanner-navpage">
-        <div class="topbanner-text">
-          <h1>Våra tjänster</h1> 
-          <p>Vi erbjuder kvalificerade konsulttjänster till företag och organisationer 
-            inom backend- och frontendutveckling. Att vi är juniorer är vår styrka. 
-            Vår kunskapsbas är bred och <em>uppdaterad</em>.  
-            Vi har koll på trenderna  och med hjälp av smarta system och enkla gränssnitt förverkligar vi dem. 
-            <br><br>Allt till förmånliga priser.</p>
-        </div>
-        <div class="my-container">
+<div class="my-background">
+        
+  <div class="container my-top-row-container">
+          
+          <div class="tjanst-img">
+            <img src="images/mobil-landscape.jpg" alt="" class="image">
+          </div>
 
+          <div class="tjanst-rubrik-ingress">
+              <h1>Dynamiska webbsidor efter ert behov</h1>
+              <p >Vi skapar dynamiska, moderna appar och webbsidor som funkar lika bra i mobilen som på laptopen.  </p>
+          </div>
         </div>
-      </div>
+</div>  
+  <div class="container my-row-container">
+            <div class="tjanst-brodtext-1">
+              <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est sunt adipisci ipsa repudiandae, porro quis delectus? Porro quam odit cum rem, distinctio iste dignissimos debitis. Voluptates soluta saepe reiciendis corporis maxime, tenetur, sapiente velit omnis necessitatibus voluptate veritatis nam itaque autem inventore ab assumenda, nobis perspiciatis dicta laborum aliquid quasi iste mollitia aspernatur tempore? Quod doloribus deserunt repudiandae porro. Magni id dignissimos dolorum incidunt temporibus similique, tempore voluptas officia nihil reiciendis esse aliquid nulla iusto cupiditate in iure, totam tenetur harum dolor ipsum? Beatae, dolor eveniet quaerat quos quae veniam officiis modi natus similique debitis accusamus, voluptatum molestiae, excepturi ullam.</p>
+          </div>
+
+          <div class="tjanst-brodtext-2">
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vero tempora natus repellat. Libero, minima quibusdam quidem voluptates soluta architecto ea reprehenderit praesentium, labore vitae officia dolor laudantium optio eligendi adipisci ad assumenda quam corporis corrupti pariatur non. Minus fugit rerum esse blanditiis perspiciatis odio beatae velit magnam saepe dolorum, sit rem, vel in? Nisi corporis vitae aperiam magnam? Saepe molestias quo, nisi voluptate officia, commodi pariatur tempora repudiandae iusto suscipit voluptatem! Ipsa assumenda temporibus eum odio, libero et veritatis quibusdam necessitatibus alias, laudantium aperiam vitae, vel eveniet suscipit! Fugit ut veniam error esse! Commodi explicabo iste laudantium deleniti voluptatum?</p>
+        </div>
+  </div>
+</div>
+        
     </section> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
