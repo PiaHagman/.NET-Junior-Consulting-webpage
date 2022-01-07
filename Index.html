@@ -48,6 +48,7 @@
             <!--.navbar-toggler determine when their content collapses behind a button. 
             HAMBURGEKNAPP FUNKTIONEN-->
             <button
+              onclick="addShadow()"
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -105,19 +106,27 @@
       Javasqrit kod för att skapa scrolleffecten på navbar
       - lägger till och tar bort bootstrapkod shadow och bg-light på nav
       - <50 är när effecten ska kicka igång
-      -->
-      <script>
-
-        var nav = document.querySelector("nav");
-        window.addEventListener("scroll", function () {
-          if (window.pageYOffset > 50) {
-            nav.classList.add("bg-light", "shadow");
-          } else {
-            nav.classList.remove("bg-light", "shadow");
-          }
-        });
+      - function addShadow() har jag lagt till som onclick på toggler butten. = När den klickas på så ska bg light och navbar-light också läggas  till
       
+      -->
+      
+      <script>
+        var nav = document.querySelector("nav");        
+
+        window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 50) {
+      addShadow();
+    } else {
+      nav.classList.remove("bg-light", "shadow");
+    }
+    });
+  
+   {
+    nav.classList.add("bg-light", "shadow");
+  }
       </script>
+
+
     </header>
     <div class="container main-area">
       <div class="upper-area">
