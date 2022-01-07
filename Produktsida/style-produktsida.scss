@@ -26,9 +26,10 @@ a {
   font-weight: bolder;
 }
 
+
 .topbanner {
   background-image: url("images/office2.jpg");
-  height: 500px;
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,22 +49,17 @@ a {
   color: #4f5a57;
 }
 
-.my-column-container,
-.my-row-container {
+.my-column-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* border: 3px solid red; */
-}
-
-.my-row-container {
-  flex-direction: row;
+  //border: 3px solid red;
 }
 
 .my-card,
 .my-image-card {
   margin-bottom: 25px;
-  /* border: 3px solid black; */
+  //border: 3px solid black;
   border: none;
 
   &:hover {
@@ -78,6 +74,9 @@ a {
     filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
   }
 }
+button a.card-link:hover{
+color: white;
+}
 
 .my-image-card {
   background: #e6eded;
@@ -89,17 +88,17 @@ a {
     height: 100%;
     width: 100%;
     background: rgba(255, 255, 255, 0);
-    cursor: pointer;
-    filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
     color: #4f5a57;
-    font-weight: 300;
+    
+  }
+  & a:hover{
+    color: #4f5a57;
   }
 }
 
 .video {
   border-radius: 4px;
   size: 120%;
-  border-radius: 4px;
   overflow: hidden;
 }
 .quote-card {
@@ -107,28 +106,55 @@ a {
   padding: 25px;
   text-align: center;
   align-items: center;
+  margin-bottom: 25px;
 
   & p {
     font-size: 120%;
     font-style: italic;
   }
 }
+.img-mobile{
+  visibility: hidden;
+  height: 0;
+  
+}
 
-@media  (max-width: 600px) {
-   .my-logo{
-      width: 70%;
-   }
-   .topbanner{
-      background-image: none;
-      clip-path: none;
-      margin-top: 150px;
-      height: 300px;
-   }
-   .topbanner-text h1{
-      font-size: 40px;
-   }
-   .p-5{
-      padding:5px!important;
-   }
+@media (max-width: 600px) {
+  .my-logo {
+    width: 70%;
+  }
 
+  .navbar-nav{
+    background-color: #f8f9fa;
+    text-align: right;
+    padding: 5px;
+    width: 40%;
+    border-radius: 5px;
+  }
+
+  .topbanner {
+    background-image: none;
+    clip-path: none;
+    margin-top: 150px;
+    height: 300px;
+  }
+  .topbanner-text h1 {
+    font-size: 40px;
+  }
+  .p-5 {
+    padding: 5px !important;
+  }
+ 
+  .my-card:hover, .my-image-card:hover{
+    filter: none;
+  }
+
+  .img-laptop{
+    visibility: hidden;
+    height: 0;
+  }
+  .img-mobile{
+    visibility:visible;
+    height: fit-content;
+  }
 }

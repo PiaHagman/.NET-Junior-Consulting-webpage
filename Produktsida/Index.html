@@ -105,21 +105,22 @@
     - lägger till och tar bort bootstrapkod shadow och bg-light
     - <50 är när effecten ska kicka igång
     -->
-    <script>
+    
+    <script class="script">
+      var storlek = window.innerWidth; 
+      
+      if (storlek < 600) { 
       var nav = document.querySelector("nav");
       window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 50) {
+        if (window.pageYOffset > 50 ) {
           nav.classList.add("bg-light", "shadow");
         } else {
           nav.classList.remove("bg-light", "shadow");
         }
       });
+    }
     </script>
   </header>
-
-
-
-
 
     <section>
       <div class="topbanner">
@@ -146,9 +147,11 @@
   <div class="my-column-container">
     <div>
       
-      <div class="card my-card" >
+      <div class="card my-card " >
         <a href="webbsidor.html">
-          <img src="images/mobil.jpg" class="card-img-top" alt="">
+          <img src="images/mobil.jpg" class="card-img-top img-laptop" alt="">
+          <img src="images/desk.jpeg" class="card-img-top img-mobile" alt="">
+
             <div class="card-body">
               <h5 class="card-title">Webbsidor</h5>
               <p class="card-text">Vi skapar dynamiska, moderna appar och webbsidor som funkar lika bra i mobilen som på laptopen.  </p>
@@ -157,35 +160,20 @@
       </div>
     </div>
 
-    <div class="card my-image-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <img src="images/coffee.jpg" class="card-img-top" alt="" >
-      <div class="card-img-overlay">
-        <h5 class="card-title">Träffa oss för en kaffe</h5>
-      </div>
+    
 
-      
-</div>
-<!--Pop-up Modal-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Vi dricker gärna kaffe med dig!</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+<div class="card my-card" >
+  <a href="Databaser.html">
+    <img src="images/desk.jpeg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Databaser</h5>
+        <p class="card-text">Vi bygger databaser i SQL och med hjälp av EF-Core. Code-First eller Data-First. Allt utefter ert behov.</p>
       </div>
-      <div class="modal-body">
-        
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Skriv in din mejladress så kontaktar vi dig inom 24 timmar.</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <button type="submit">Skicka</button>
-        </form>
-      </div>
-    </div>
-  </div>
+    </a>
 </div>
+
+
 </div>
 </div>
 <!--Kolumn 2-->
@@ -220,12 +208,10 @@
                   </div>
                 
                   <div class="card my-image-card quote-card">
-                   
                       <p class="card-text">"Vi fick en komplett leverans som överträffade våra förväntningar. Vi har arbetat med .NET Junior Consulting vid ett tillfälle tidigare och ser även möjligheten för samarbete i framtiden"</p>
                       <button>
                       <a href="Kontakt.html" class="card-link">Mer om oss</a>
                     </button>
-                    
                   </div>
                 
               </div>
@@ -246,15 +232,35 @@
                   </div>
                 </div>
 
-                <div class="card my-card" >
-                  <a href="Databaser.html">
-                    <img src="images/desk.jpeg" class="card-img-top" alt="">
-                      <div class="card-body">
-                        <h5 class="card-title">Databaser</h5>
-                        <p class="card-text">Vi bygger databaser i SQL och med hjälp av EF-Core. Code-First eller Data-First. Allt utefter ert behov.</p>
-                      </div>
-                    </a>
+                <div class="card my-image-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="images/coffee.jpg" class="card-img-top" alt="" >
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Träffa oss för en kaffe</h5>
+                  </div>     
                 </div>
+                <!--Pop-up Modal-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Vi dricker gärna kaffe med dig!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Skriv in din mejladress så kontaktar vi dig inom 24 timmar.</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                          <button type="submit">Skicka</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
 
               </div>
           </div>
