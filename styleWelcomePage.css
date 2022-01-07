@@ -42,6 +42,30 @@ body,
   text-align: center;
   max-width: 900px;
 }
+.btn-secondary {
+  background-color: #527177;
+  border: #386369 2px solid;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.btn-secondary:focus {
+  background-color: #527177;
+  border: #386369 2px solid;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  background-color: #19383d;
+  border: #386369 2px solid;
+  border-radius: 4px;
+}
+
+.btn-secondary:active {
+  border: #386369 2px solid;
+  box-shadow: none;
+}
 
 .divder-area {
   grid-area: 3/1/4/4;
@@ -105,6 +129,9 @@ body,
   .middle-area {
     flex-direction: row;
     align-items: flex-start;
+  }
+  .divder-area {
+    height: 150px;
   }
 
   .box {
