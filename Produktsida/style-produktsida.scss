@@ -145,11 +145,12 @@ color: white;
 }
 .tjanst-img, .tjanst-rubrik-ingress{
   flex: 1 1 50%; 
-  padding: 5% 5% 0 0;
+  padding: 8% 0 0 0;
 }
 
 .my-row-container{
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-top: 2%;
@@ -159,6 +160,7 @@ color: white;
 .tjanst-brodtext-1, .tjanst-brodtext-2{
   flex: 1 1 50%;
   padding-right: 50px;
+  text-align: justify;
 }
 
 .page-link{
@@ -167,16 +169,15 @@ color: white;
     color: #19383d;
   }
 }
-/*Responsivitet för mobil*/
+/*Responsivitet*/
 @media (max-width: 600px) {
 
   h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .my-logo {
     width: 70%;
   }
-
   .navbar-nav{
     background-color: #f8f9fa;
     text-align: right;
@@ -184,26 +185,23 @@ color: white;
     width: 40%;
     border-radius: 5px;
   }
-
-  .topbanner {
-    background-image: none;
-    clip-path: none;
-    margin-top: 100px;
-    height: 400px;
-  }
   
-  .p-5 {
-    padding: 5px !important;
-  }
 /*@media index.html-------------------*/
-  .my-card:hover, .my-image-card:hover{
+.topbanner {
+  background-image: none;
+  clip-path: none;
+  margin-top: 100px;
+  height: 400px;
+}
+.p-5 {
+  padding: 5px !important;
+}  
+.my-card:hover, .my-image-card:hover{
     filter: none;
   }
-
   .img-laptop{
     visibility: hidden;
     height: 0;
-    
   }
   .img-mobile{
     visibility:visible;
@@ -215,25 +213,92 @@ color: white;
     color: white;
   }
   .card-title, .card-text{
-text-align: center;
+    text-align: center;
   }
 
 /*@ media Tjänster undersidor----------------*/
-.my-background{
-  background-color: white;
+.my-background-webbsidor{
+  position: relative;
   height: 450px;
- /*  background-image: url("images/mobil.jpg");
-  background-position: center;
+  clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+}
+.my-background-webbsidor:before{
+  content: "";
+  background-image: url("images/mobil.jpg");
+  position:absolute;
   background-size: cover; 
-  // opacity: 0.3;
-  TODO https://sebhastian.com/background-image-opacity-css/
-  */
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.my-background-databaser{
+  position: relative;
+  height: 450px;;
+}
+.my-background-databaser:before{
+  content: "";
+  background-image: url("images/desk.jpeg");
+  position:absolute;
+  background-size: cover; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; 
+  z-index: -1;
+  opacity: 0.3;
+  clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+}
+
+.my-background-mjukvaru{
+  position: relative;
+  height: 450px;;
+}
+.my-background-mjukvaru:before{
+  content: "";
+  background-image: url("images/dator.jpg");
+  position:absolute;
+  background-size: cover; 
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+  clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+}
+
+.my-background-csharp{
+  position: relative;
+  height: 450px;;
+}
+.my-background-csharp:before{
+  content: "";
+  background-image: url("images/typing-pic.jpg");
+  position:absolute;
+  background-size: cover; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+  clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+}
+
+.my-background-javascript{
+  background-color: #d1aba4;
+  height: 450px;
   clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
 }
 
 .my-top-row-container, .my-row-container{
   flex-direction: column;
-  opacity: 1;
 }
 
 .my-row-container{
@@ -242,19 +307,26 @@ text-align: center;
 
 .tjanst-rubrik-ingress{
   flex: 1 1 100%; 
-  margin-top: 5%;
+  margin-top: 15%;
   padding: 5%;
   text-align: center;
   opacity: 1;
-  
-  //border: 3px solid black;
+  & p{
+    font-weight: bolder;
+    padding: 4%;
+  }
 }
-
 .tjanst-brodtext-1, .tjanst-brodtext-2{
+  text-align: justify;
   padding: 0% 10% 0 10%;
 }
-
 .image{
   display: none;
 }
+}
+
+@media (max-width: 500px) {
+  .pagination{
+    display:none;
+  }
 }
