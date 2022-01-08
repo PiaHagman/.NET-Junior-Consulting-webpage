@@ -24,8 +24,14 @@ a:hover {
   color: white;
 }
 
-.active {
+.tjanster-active {
   font-weight: bolder;
+}
+
+.active {
+  font-weight: bold;
+  background-color: #527177 !important;
+  border: hidden;
 }
 
 .topbanner {
@@ -134,7 +140,7 @@ button a.card-link:hover {
   height: 0;
 }
 
-/*webbsidor.html-------------------*/
+/*Tjänster undersidor-------------------*/
 .my-background {
   background-color: white;
   height: 650px;
@@ -156,12 +162,13 @@ button a.card-link:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 8%;
+  padding-top: 5%;
   height: auto;
 }
 
 .image {
   width: 80%;
+  border-radius: 4px;
 }
 
 .tjanst-img, .tjanst-rubrik-ingress {
@@ -190,6 +197,14 @@ button a.card-link:hover {
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   padding-right: 50px;
+}
+
+.page-link {
+  color: #19383d;
+}
+
+.page-link:hover {
+  color: #19383d;
 }
 
 /*Responsivitet för mobil*/
@@ -239,7 +254,7 @@ button a.card-link:hover {
   .card-title, .card-text {
     text-align: center;
   }
-  /*@ media webbsidor.html----------------*/
+  /*@ media Tjänster undersidor----------------*/
   .my-background {
     background-color: white;
     height: 450px;
