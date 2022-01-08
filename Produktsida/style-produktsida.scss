@@ -21,9 +21,13 @@ a {
     color: white;
   }
 }
-
-.active {
+.tjanster-active{
   font-weight: bolder;
+}
+.active {
+  font-weight: bold;
+  background-color: #527177 !important; 
+  border: hidden;
 }
 
 
@@ -130,12 +134,13 @@ color: white;
   flex-direction: row;
   justify-content: center;
   align-items:flex-end;
-  padding-top: 8%;
+  padding-top: 5%;
   height: auto;
 }
 
 .image{
   width: 80%;
+  border-radius: 4px;
   
 }
 .tjanst-img, .tjanst-rubrik-ingress{
@@ -154,10 +159,14 @@ color: white;
 .tjanst-brodtext-1, .tjanst-brodtext-2{
   flex: 1 1 50%;
   padding-right: 50px;
-
-  
 }
 
+.page-link{
+  color: #19383d;
+  &:hover{
+    color: #19383d;
+  }
+}
 /*Responsivitet för mobil*/
 @media (max-width: 600px) {
 
