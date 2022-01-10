@@ -48,7 +48,7 @@
             <!--.navbar-toggler determine when their content collapses behind a button. 
             HAMBURGEKNAPP FUNKTIONEN-->
             <button
-              onclick="addShadow()"
+              onclick="changeBgAndShadow()"
               class="navbar-toggler"
               id="hamburger-button"
               type="button"
@@ -112,8 +112,8 @@
       -->
       
       <script>
-      function addShadow() 
-        {
+      function changeBgAndShadow() 
+      {
           var togglerExpanded = document.getElementById("hamburger-button").getAttribute("aria-expanded"); 
           if (togglerExpanded== "true" || window.pageYOffset > 50 ){
             nav.classList.add("bg-light", "shadow");
@@ -123,22 +123,34 @@
           }
 
           document.getElementById("hamburger-button").setAttribute("aria-expanded", togglerExpanded);
-        }
+      }
         var nav = document.querySelector("nav"); 
                
         window.addEventListener("scroll", function () 
         {
             if (window.pageYOffset > 50) {
-                  addShadow();
+              changeBgAndShadow();
             } 
-            else {
-              nav.classList.remove("bg-light", "shadow");
-            }
+            
         });
   
 
   /*
-  
+
+
+  OMG JAg löste det med att bara ta bort denna else stats här !!!!! 
+  window.addEventListener("scroll", function () 
+        {
+            if (window.pageYOffset > 50) {
+              changeBgAndShadow();
+            } 
+             else {
+              nav.classList.remove("bg-light", "shadow");
+            }
+            
+        });
+ 
+HUr det såg ut innan jag började härja:
         window.addEventListener("scroll", function () {
             if (window.pageYOffset > 50) {
                   addShadow();
@@ -147,7 +159,7 @@
               nav.classList.remove("bg-light", "shadow");
             }
         });
-  function addShadow() {
+        function addShadow() {
         	nav.classList.add("bg-light", "shadow");
         }
         */
