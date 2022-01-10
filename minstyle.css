@@ -1,13 +1,26 @@
 * {
-    margin: 1px 3px 5x 6px;
+    margin: 0px 0px 0px 0px;
     /*margin-top: 5;*/
-    padding: 5px;
-    border: 2px inset black;
-    background-color: gray;
+    padding: 0px;
+    border: 0px inset black;
+    /*border-left: 0px black;*/
+    /*background-color: gray;*/
 }
 
+div.c{
+  border-right: 0px black;
+}
+div.test{
+  /* set green border independently on each side */
+  border-left: solid black 20px;
+  border-right: solid black 20px;
+}
 div.a {
     font-size: 40px;
+    background-color: white;
+}
+div.b  {
+    border: 4px inset black;
 }
 
 * {
@@ -16,7 +29,14 @@ div.a {
 .column {
     float: left;
     width: 33%;
-    padding: 1px;
+    padding: 1px ;
+  }
+  .column2{
+    float: left;
+    width: 40%;
+    padding: 1px ;
+    /*padding: 10px black;
+    border-left: 10px;*/
   }
   .row::after {
     content: "";
@@ -26,4 +46,38 @@ div.a {
 
   h1{
     background-color: white;
+}
+h3 {
+  font-family: "Open Sans";
+  max-width:  400px;
+  line-height:  10px auto;
+  font-size:  36px;
+}
+footer{background: #111;
+height :auto;
+width: 100vw;
+font-family: "Open Sans";
+padding-top: 40 px;
+color: #fff;
+}
+.footer-contents{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+.socials li {
+  margin: 0 10 px;
+}
+.socials a i{
+  font-size:  1.1rem;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a:hover i{
+  color: aqua;
 }
