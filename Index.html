@@ -124,19 +124,22 @@
 
           document.getElementById("hamburger-button").setAttribute("aria-expanded", togglerExpanded);
       }
-        var nav = document.querySelector("nav"); 
+      
+      var nav = document.querySelector("nav"); 
+     
                
-        window.addEventListener("scroll", function () 
+      window.addEventListener("scroll", function () 
         {
             if (window.pageYOffset > 50) {
               changeBgAndShadow();
             } 
             
         });
+
+      </script>
   
 
-  /*
-
+  <!--
 
   OMG JAg löste det med att bara ta bort denna else stats här !!!!! 
   window.addEventListener("scroll", function () 
@@ -144,10 +147,10 @@
             if (window.pageYOffset > 50) {
               changeBgAndShadow();
             } 
+            
              else {
               nav.classList.remove("bg-light", "shadow");
             }
-            
         });
  
 HUr det såg ut innan jag började härja:
@@ -162,8 +165,16 @@ HUr det såg ut innan jag började härja:
         function addShadow() {
         	nav.classList.add("bg-light", "shadow");
         }
+
+         
+ undvika inline scrip. inte ha scrit i html koden. Tipps från Grabs
+      var knapp = document.querySelector("#hamburger-button")
+      knapp.addEventListener("click", () => {
+        console.log("Hej");
+      } )
         */
-      </script>
+       
+    -->
 
 
     </header>
