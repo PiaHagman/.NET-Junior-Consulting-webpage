@@ -3,7 +3,7 @@
     /*margin-top: 5;*/
     padding: 0px;
     border: 0px inset black;
-    /*border-left: 0px black;*/
+    /*border-left: 1px black;
     /*background-color: gray;*/
 }
 
@@ -21,6 +21,9 @@ div.a {
 }
 div.b  {
     border: 4px inset black;
+}
+div.d{
+    background-color: black;
 }
 
 * {
@@ -80,4 +83,35 @@ color: #fff;
 }
 .socials a:hover i{
   color: aqua;
+}
+.header{
+  width: 100%;
+  height: 40px;
+  display: block;
+  background-color: black;
+}
+
+.in_header{
+  width: 1100px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: gray;
+
+}
+.navigering{
+  float: right;
+  height: 100%
+}
+
+.navigering a {
+  height: 100%;
+  display: table;
+  float : left;
+  padding: 0px 20px;
+}
+
+.navigering a li{
+  display: table-cell;
+  vertical-align: middle;
 }
