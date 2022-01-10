@@ -50,6 +50,7 @@
             <button
               onclick="addShadow()"
               class="navbar-toggler"
+              id="hamburger-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown"
@@ -111,23 +112,45 @@
       -->
       
       <script>
-        var nav = document.querySelector("nav");        
+      function addShadow() 
+        {
+          var togglerExpanded = document.getElementById("hamburger-button").getAttribute("aria-expanded"); 
+          if (togglerExpanded== "true" || window.pageYOffset > 50 ){
+            nav.classList.add("bg-light", "shadow");
+          } 
+          else {
+            nav.classList.remove("bg-light", "shadow");
+          }
 
+          document.getElementById("hamburger-button").setAttribute("aria-expanded", togglerExpanded);
+        }
+        var nav = document.querySelector("nav"); 
+               
+        window.addEventListener("scroll", function () 
+        {
+            if (window.pageYOffset > 50) {
+                  addShadow();
+            } 
+            else {
+              nav.classList.remove("bg-light", "shadow");
+            }
+        });
+  
+
+  /*
+  
         window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 50) {
-      addShadow();
-    } else {
-      nav.classList.remove("bg-light", "shadow");
-    }
-    });
-  
-   {
-    nav.classList.add("bg-light", "shadow");
-  }
-  
+            if (window.pageYOffset > 50) {
+                  addShadow();
+            } 
+            else {
+              nav.classList.remove("bg-light", "shadow");
+            }
+        });
   function addShadow() {
         	nav.classList.add("bg-light", "shadow");
         }
+        */
       </script>
 
 
@@ -139,7 +162,7 @@
           Vi erbjuder tjänster inom backend, frontend och fullstack. Vi skapar
           allt från hemsidor och appar till pålitliga databaser och med våra
           juniora webbutvecklare kan du vara säker på att få del av den senaste
-          inom IT. Allt till förmånliga och billiga priser.
+          inom .NET. Allt till förmånliga och billiga priser.
         </p>
         <!--modal-->
         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -186,9 +209,9 @@
           <div class="box-title">Erfarenhet</div>
           <p class="box-text">
             Våra juniora utvecklare är alla utbildade Webbutvecklare inom .NET
-            på EC Utbildningen och har en bred och praktiskt kunskap inom både
+         och har en bred och praktiskt kunskap inom både
             frontend och backend. Att vi är juniora är vår styrka och
-            anledningen till våra förmåligt priser,
+            anledningen till våra förmåliga priser.
           </p>
           <button>Om oss</button>
         </div>
@@ -199,7 +222,7 @@
           <div class="box-title">Uppdrag</div>
           <p class="box-text">
             Våra juniora utvecklare kan hjälpa just ditt företag med allt från 
-            design av ny hemsida, utveckling av en solid backend till en ny app. Vi har goda referenser från tidigare uppdrag. Besök vår github eller se vår blogg för 
+            design av ny hemsida eller app eller utveckling av en solid backend. Vi har goda referenser från tidigare uppdrag. Besök vår github eller se vår blogg för 
             att ta del av tidigare projekt. 
           </p>
           <button>Blogg</button>
