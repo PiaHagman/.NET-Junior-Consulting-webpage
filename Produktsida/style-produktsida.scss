@@ -8,11 +8,6 @@ body {
   color: #19383d; /*Text-färg*/
 }
 
-h1 {
-  font-family: "Noto Serif", serif;
-  font-size: 300%;
-}
-
 a {
   text-decoration: none;
   color: #19383d;
@@ -200,8 +195,8 @@ color: white;
     filter: none;
   }
   .img-laptop{
-    visibility: hidden;
-    height: 0;
+    display: none;
+
   }
   .img-mobile{
     visibility:visible;
