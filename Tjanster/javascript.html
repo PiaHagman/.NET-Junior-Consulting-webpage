@@ -31,97 +31,112 @@
 
 
   <body>
-<header>
-    <div class="fixed-navbar">
-      <!--Navbar-light stylar navbar med förinställda färger-->
-      <!--.navbar-expand-lg determine when their content collapses behind a button. -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a href="../index.html">
-            <span class="navbar-logo">
-              <img src="images/logo.png" alt="Företagslogga" class="my-logo">
-              </span
-            ></a
-          >
-
-          <!--.navbar-toggler determine when their content collapses behind a button. 
-          HAMBURGEKNAPP FUNKTIONEN-->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--.navbar-collapse determine when their content collapses behind a button. -->
-          <!-- "STOR BILD NAVBAR FUNKTION" -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <!-- ms-auto mb-2 mb-lg-0 placerar navbar placerars till höger-->
-            <!--.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).-->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../Kontaktsida/Index.html">Om oss</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Bloggsida/Index.html">Blogg</a>
-              </li>
-              <!--Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.-->
-              <li class="nav-item dropdown profile-dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Tjänster
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="webbsidor.html">Webbsidor</a></li>
-                  <li><a class="dropdown-item" href="Databaser.html">Databaser</a></li>
-                  <li>
-                    <a class="dropdown-item" href="mjukvarutest.html">Mjukvarutestning</a>
-                  </li>
-                  <li><a class="dropdown-item" href="csharp.html">C#</a></li>
-                  <li><a class="dropdown-item active" href="javascript.html">Javascript</a></li>
-                </ul>
-              </li>
-            </ul>
+    <header>
+      <!-- NAVBAR-->
+      <div class="fixed-navbar">
+        <!--.navbar-expand-lg determine when their content collapses behind a button. -->
+        <!--.navbar-light stylar med förinställda färger. -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a href="../index.html"
+              ><img class="logo" src="/images/logo.png" />
+            </a>
+            <!--.navbar-toggler determine when their content collapses behind a button. 
+            HAMBURGEKNAPP FUNKTIONEN-->
+            <button
+              onclick="changeBgAndShadow()"
+              class="navbar-toggler"
+              id="hamburger-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--.navbar-collapse determine when their content collapses behind a button. -->
+            <!-- "STOR BILD NAVBAR FUNKTION" -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <!-- ms-auto mb-2 mb-lg-0 placerar navbar placerars till höger-->
+              <!--.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).-->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../Kontaktsida/Index.html">Om oss</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Bloggsida/Index.html">Blogg</a>
+                </li>
+                <!--Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.-->
+                <li class="nav-item dropdown profile-dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="index.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Tjänster
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="index.html">Tjänster</a></li>
+                    <li><a class="dropdown-item" href="webbsidor.html">Webbsidor</a></li>
+                    <li>
+                      <a class="dropdown-item" href="mjukvarutest.html">Mjukvarutestning</a>
+                    </li>
+                    <li><a class="dropdown-item" href="Databaser.html">Databaser</a></li>
+                    <li><a class="dropdown-item active" href="javascript.html">Javascript</a></li>
+                    <li><a class="dropdown-item" href="csharp.html">C#</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
-
-    <!--
-    Javasqrit kod för att skapa scrolleffecten på navbar
-    - lägger till och tar bort bootstrapkod shadow och bg-light
-    - <50 är när effecten ska kicka igång
-    -->
-    
-    <script>
-      /* var storlek = window.innerWidth; 
-      
-      if (storlek < 600) {  */
-      var nav = document.querySelector("nav");
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 50 ) {
-          nav.classList.add("bg-light", "shadow");
-        } else {
-          nav.classList.remove("bg-light", "shadow");
-        }
-      });
-   /*  } */
-    </script>
-  </header>
-
+        </nav>
+      </div>
+  
+      <!--
+      Javasqrit kod för att skapa scrolleffecten på navbar
+      - lägger till och tar bort bootstrapkod shadow och bg-light på nav
+      - <50 är när effecten ska kicka igång
+      - functionen changeBgAndShadow() har jag lagt till dels som onclick på toggler butten. Men också 
+      efter en variabel togglerExpanded som via getAttribute("aria-expanded") gör att javascript kan känna av om toggler menyn
+      är öppen eller stängd.
+      -->
+      <script>
+      function changeBgAndShadow() 
+      {
+          var togglerExpanded = document.getElementById("hamburger-button").getAttribute("aria-expanded"); 
+          if (togglerExpanded== "true" || window.pageYOffset > 50 ){
+            nav.classList.add("bg-light", "shadow");
+          } 
+          else {
+            nav.classList.remove("bg-light", "shadow");
+          }
+  
+          document.getElementById("hamburger-button").setAttribute("aria-expanded", togglerExpanded);
+      }
+  
+      var nav = document.querySelector("nav"); 
+            
+      window.addEventListener("scroll", function () 
+        {
+            if (window.pageYOffset > 50) {
+              changeBgAndShadow();
+            } 
+            else {
+              nav.classList.remove("bg-light", "shadow");
+            }
+        });
+      </script>
+  <!--NAVBAR SLUT-->
+  
+    </header>
 <div class="my-background my-background-javascript">
         
   <div class="container my-top-row-container">
