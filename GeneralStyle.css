@@ -2,7 +2,7 @@
 /* fonts
 /* style för footer
 /* button*/
-* {
+h1 {
   font-family: "Noto Serif", serif;
 }
 
@@ -58,3 +58,4 @@ button a:hover {
 button a:hover {
   background-color: transparent;
 }
+/*foter*/
