@@ -2,6 +2,9 @@
 /* fonts
 /* style för footer
 /* button*/
+* {
+  font-family: "Noto Serif", serif;
+}
 
 .fixed-navbar {
   position: fixed;
