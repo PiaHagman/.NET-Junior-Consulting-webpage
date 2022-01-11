@@ -39,7 +39,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <a href="../index.html"
-              ><img class="logo" src="/images/logo.png" />
+              ><img class="logo" id="my-logo" src="images/logo.png" alt= ""/>
             </a>
             <!--.navbar-toggler determine when their content collapses behind a button. 
             HAMBURGEKNAPP FUNKTIONEN-->
@@ -152,139 +152,127 @@
     </section> 
 
     <section class="p-5">
-      <div class="container">
-        <div class="row">
+      <div class="container"> <!--Bootstrap-klass-->
+        <div class="row"> <!--Bootstrap-klass-->
           
 <!--Kolumn 1-->
-<div class="col-md" >
-  <div class="my-column-container">
-    <div>
-      <a href="webbsidor.html">
-      <div class="card my-card " >
-        
-          <img src="images/mobil.jpg" class="card-img-top img-laptop" alt="">
-          <img src="images/mobil-landscape.jpg" class="card-img-top img-mobile" alt="">
-
-            <div class="card-body">
-              <h5 class="card-title">Webbsidor</h5>
-              <p class="card-text">Vi skapar dynamiska, moderna appar och webbsidor som funkar lika bra i mobilen som på laptopen.  </p>
+        <div class="col-md" >
+         <div class="my-column-container">
+            <div>
+              <a href="webbsidor.html">
+                <div class="card my-card" id="card-webbsidor">
+                 <img src="images/mobil.jpg" class="card-img-top img-laptop" alt="">
+                  <img src="images/mobil-landscape.jpg" class="card-img-top img-mobile" alt="">
+                   <div class="card-body">
+                     <h5 class="card-title">Webbsidor</h5>
+                     <p class="card-text">Vi skapar dynamiska, moderna appar och webbsidor som funkar lika bra i mobilen som på laptopen.  </p>
+                   </div>
+             </div>
+           </a>
             </div>
-        
-      </div>
-    </a>
-    </div>
 
-    
+            <a href="Databaser.html">
+              <div class="card my-card">
+               <img src="images/desk.jpeg" class="card-img-top" alt="">
+                 <div class="card-body">
+                    <h5 class="card-title">Databaser</h5>
+                   <p class="card-text">Vi bygger databaser i SQL och med hjälp av EF-Core. Code-First eller Data-First. Allt utefter ert behov.</p>
+                 </div>
+             </div>
+           </a>
+          </div>
+        </div>
 
-
-<div class="card my-card" >
-  <a href="Databaser.html">
-    <img src="images/desk.jpeg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Databaser</h5>
-        <p class="card-text">Vi bygger databaser i SQL och med hjälp av EF-Core. Code-First eller Data-First. Allt utefter ert behov.</p>
-      </div>
-    </a>
-</div>
-
-
-</div>
-</div>
 <!--Kolumn 2-->
-          <div class="col-md" >
-            <div class="my-column-container">
-              <div>
-                
-
-                <div class="card my-image-card">
-                  <a href="csharp.html">
+        <div class="col-md" >
+          <div class="my-column-container">
+            <div>
+      
+              <a href="csharp.html">         
+                <div class="card my-image-card">  
                   <div class="video">
-                  <video autoplay muted >
-                    <source src="images/typing-video.webm" type="video/webm">
+                   <video autoplay muted >
+                     <source src="images/typing-video.webm" type="video/webm">
                       Your browser does not support the video tag.
-                  </video>
-                </div>
-                  <div class="card-img-overlay">
-                    <h5 class="card-title">Backendutveckling i C#</h5>
-                  </div>
-                  </a>
-                </div>
-
+                    </video>
+                 </div>
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Backendutveckling i C#</h5>
+                    </div>
+               </div>
+              </a>
+              <div>
+                <a href="mjukvarutest.html">
                   <div class="card my-card">
-                    <a href="mjukvarutest.html">
                     <img src="images/dator.jpg" class="card-img-top" alt="">
                       <div class="card-body">
                         <h5 class="card-title">Mjukvarutestning</h5>
                         <p class="card-text">Testdriven utveckling - ett obligatoriskt och självklart inslag i utvecklingsarbetet för säkra och solida produkter.  </p>
                       </div>
-                    </div>
-                  </a>
                   </div>
-                
-                  <div class="card my-image-card quote-card">
-                      <p class="card-text">"Vi fick en komplett leverans som överträffade våra förväntningar. Vi har arbetat med .NET Junior Consulting vid ett tillfälle tidigare och ser även möjligheten för samarbete i framtiden"</p>
-                      <button>
-                      <a href="Kontakt.html" class="card-link">Mer om oss</a>
-                    </button>
-                  </div>
-                
+                </a>
               </div>
+        
+              <div class="card my-image-card quote-card">
+                <p class="card-text">"Vi fick en komplett leverans som överträffade våra förväntningar. Vi har arbetat med .NET Junior Consulting vid ett tillfälle tidigare och ser även möjligheten för samarbete i framtiden"</p>
+                  <button>
+                    <a href="../Kontaktsida/Index.html" class="card-link">Mer om oss</a>
+                  </button>
+              </div>
+                
             </div>
+          </div>
+        </div>
             
 <!--Kolumn 3-->
-            <div class="col-md" >
-              <div class="my-column-container">
-                <div>
-                  <div class="card my-card" >
-                    <a href="javascript.html">
-                      <img src="images/javascript.jpg" class="card-img-top img-laptop" alt="">
-                      <img src="images/javascript-landscape.jpg" class="card-img-top img-mobile" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title">Javascript</h5>
-                          <p class="card-text">Vi hjälper dig skapa interaktiva och dynamiska inslag på din webbsida som går att interagera med.
+        <div class="col-md" >
+          <div class="my-column-container">
 
-                          </p>
+            <div>
+              <a href="javascript.html">
+                <div class="card my-card" >
+                  <img src="images/javascript.jpg" class="card-img-top img-laptop" alt="">
+                    <img src="images/javascript-landscape.jpg" class="card-img-top img-mobile" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Javascript</h5>
+                        <p class="card-text">Vi hjälper dig skapa interaktiva och dynamiska inslag på din webbsida som går att interagera med.</p>
                       </div>
-                    </a>
+                </div>
+              </a>
+            </div>
+
+            <div class="card my-image-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/coffee.jpg" class="card-img-top img-laptop" alt="" >
+              <img src="images/coffee_landscape.jpg" class="card-img-top img-mobile" alt="" >
+                <div class="card-img-overlay">
+                  <h5 class="card-title card-title-coffee">Träffa oss för en kaffe</h5>
+                </div>     
+            </div>
+    <!--Pop-up Modal-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Vi dricker gärna kaffe med dig!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                </div>
-
-                <div class="card my-image-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <img src="images/coffee.jpg" class="card-img-top img-laptop" alt="" >
-                  <img src="images/coffee_landscape.jpg" class="card-img-top img-mobile" alt="" >
-                  <div class="card-img-overlay">
-                    <h5 class="card-title card-title-coffee">Träffa oss för en kaffe</h5>
-                  </div>     
-                </div>
-                <!--Pop-up Modal-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Vi dricker gärna kaffe med dig!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        
-                        <form>
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Skriv in din mejladress så kontaktar vi dig inom 24 timmar.</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          </div>
-                          <button type="submit">Skicka</button>
-                        </form>
-                      </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Skriv in din mejladress så kontaktar vi dig inom 24 timmar.</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1">
                     </div>
-                  </div>
+                      <button type="submit">Skicka</button>
+                  </form>
                 </div>
-
-                
-
               </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 
 

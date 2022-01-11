@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* *{
     border: 3px solid black;
-    margin: 10px;
-    padding: 20px;
 } */
 body {
   background-color: #e6eded;
@@ -38,10 +36,6 @@ a:hover {
   position: relative;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
-}
-
-.topbanner-navpage {
-  opacity: 0.5;
 }
 
 .topbanner-text {
@@ -131,8 +125,7 @@ button a.card-link:hover {
 }
 
 .img-mobile {
-  visibility: hidden;
-  height: 0;
+  display: none;
 }
 
 /*Tjänster undersidor-------------------*/
@@ -211,23 +204,22 @@ button a.card-link:hover {
   h1 {
     font-size: 35px;
   }
-  .my-logo {
-    width: 70%;
-  }
-  .navbar-nav {
+  /* .navbar-nav{
     background-color: #f8f9fa;
     text-align: right;
     padding: 5px;
     width: 40%;
     border-radius: 5px;
-  }
+  } */
   /*@media index.html-------------------*/
   .topbanner {
     background-image: none;
-    -webkit-clip-path: none;
-            clip-path: none;
-    margin-top: 100px;
-    height: 400px;
+    background-color: white;
+    height: 550px;
+  }
+  .topbanner-text {
+    width: 80%;
+    padding-top: 10%;
   }
   .p-5 {
     padding: 5px !important;
@@ -240,11 +232,14 @@ button a.card-link:hover {
     display: none;
   }
   .img-mobile {
-    visibility: visible;
+    display: block;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     position: relative;
+  }
+  #card-webbsidor {
+    margin-top: 25px;
   }
   .card-title-coffee {
     color: white;
@@ -328,7 +323,7 @@ button a.card-link:hover {
             clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
   }
   .my-background-javascript {
-    background-color: #d1aba4;
+    background-color: white;
     height: 450px;
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
             clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
@@ -346,7 +341,7 @@ button a.card-link:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
-    margin-top: 15%;
+    margin-top: 20%;
     padding: 5%;
     text-align: center;
     opacity: 1;
@@ -364,9 +359,29 @@ button a.card-link:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .pagination {
+    font-size: 12px;
+  }
+  .page-link {
+    padding: 3px;
+  }
+}
+
+@media (max-width: 1018px) {
+  .img-laptop {
     display: none;
+  }
+  .img-mobile {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  #my-logo {
+    width: 75%;
+    height: 75%;
   }
 }
 /*# sourceMappingURL=style-produktsida.css.map */

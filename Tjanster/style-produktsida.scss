@@ -1,7 +1,5 @@
 /* *{
     border: 3px solid black;
-    margin: 10px;
-    padding: 20px;
 } */
 body {
   background-color: #e6eded;
@@ -24,8 +22,6 @@ a {
   background-color: #527177 !important; 
   border: hidden;
 }
-
-
 .topbanner {
   background-image: url("images/office2.jpg");
   height: 500px;
@@ -34,10 +30,6 @@ a {
   background-size: cover;
   position: relative;
   clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
-}
-
-.topbanner-navpage {
-  opacity: 0.5;
 }
 .topbanner-text {
   text-align: center;
@@ -52,14 +44,13 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  //border: 3px solid red;
 }
 
 .my-card,
 .my-image-card {
   margin-bottom: 25px;
-  //border: 3px solid black;
   border: none;
+  //border: 3px solid black;
 
   &:hover {
     display: block;
@@ -113,8 +104,8 @@ color: white;
   }
 }
 .img-mobile{
-  visibility: hidden;
-  height: 0;
+  display: none;
+  //height: 0;
   
 }
 
@@ -170,23 +161,26 @@ color: white;
   h1 {
     font-size: 35px;
   }
-  .my-logo {
-    width: 70%;
-  }
-  .navbar-nav{
+
+  /* .navbar-nav{
     background-color: #f8f9fa;
     text-align: right;
     padding: 5px;
     width: 40%;
     border-radius: 5px;
-  }
+  } */
   
 /*@media index.html-------------------*/
 .topbanner {
   background-image: none;
-  clip-path: none;
-  margin-top: 100px;
-  height: 400px;
+  background-color: white;
+  //clip-path: none;
+  height: 550px;
+    
+}
+.topbanner-text{
+  width: 80%;
+  padding-top: 10%;
 }
 .p-5 {
   padding: 5px !important;
@@ -196,14 +190,17 @@ color: white;
   }
   .img-laptop{
     display: none;
-
   }
   .img-mobile{
-    visibility:visible;
+    display: block;
     height: fit-content;
     position: relative;
     //align-items: flex-start;
   }
+  #card-webbsidor{
+    margin-top: 25px;
+  }
+  
   .card-title-coffee{
     color: white;
   }
@@ -287,7 +284,7 @@ color: white;
 }
 
 .my-background-javascript{
-  background-color: #d1aba4;
+  background-color: white;
   height: 450px;
   clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
 }
@@ -302,7 +299,7 @@ color: white;
 
 .tjanst-rubrik-ingress{
   flex: 1 1 100%; 
-  margin-top: 15%;
+  margin-top: 20%;
   padding: 5%;
   text-align: center;
   opacity: 1;
@@ -320,8 +317,30 @@ color: white;
 }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .pagination{
-    display:none;
+    //display:none;
+    font-size: 12px;    
+    }
+    .page-link{
+      padding: 3px;
+    }
+  }
+
+
+@media (max-width: 1018px){
+  .img-laptop{
+    display: none;
+  }
+  .img-mobile{
+    display: block;
+    height: fit-content;
+    position: relative;
+  }
+  #my-logo{
+    width: 75%;
+    height: 75%;
   }
 }
+
+
