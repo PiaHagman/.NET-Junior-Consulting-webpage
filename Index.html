@@ -45,7 +45,6 @@
             <a href="Index.html"
               ><img class="logo" src="/images/logo.png" />
             </a>
-            <!--TODO fråga Sofia om SVG bilder-->
             <!--.navbar-toggler determine when their content collapses behind a button. 
             HAMBURGEKNAPP FUNKTIONEN-->
             <button
@@ -108,10 +107,10 @@
       Javasqrit kod för att skapa scrolleffecten på navbar
       - lägger till och tar bort bootstrapkod shadow och bg-light på nav
       - <50 är när effecten ska kicka igång
-      - function addShadow() har jag lagt till som onclick på toggler butten. = När den klickas på så ska bg light och navbar-light också läggas  till
-      
+      - functionen changeBgAndShadow() har jag lagt till dels som onclick på toggler butten. Men också 
+      efter en variabel togglerExpanded som via getAttribute("aria-expanded") gör att javascript kan känna av om toggler menyn
+      är öppen eller stängd.
       -->
-      
       <script>
       function changeBgAndShadow() 
       {
@@ -125,10 +124,9 @@
 
           document.getElementById("hamburger-button").setAttribute("aria-expanded", togglerExpanded);
       }
-      
+
       var nav = document.querySelector("nav"); 
-     
-               
+            
       window.addEventListener("scroll", function () 
         {
             if (window.pageYOffset > 50) {
@@ -137,49 +135,9 @@
             else {
               nav.classList.remove("bg-light", "shadow");
             }
-            
         });
-
       </script>
-  
-
-  <!--
-
-  OMG JAg löste det med att bara ta bort denna else stats här !!!!! 
-  window.addEventListener("scroll", function () 
-        {
-            if (window.pageYOffset > 50) {
-              changeBgAndShadow();
-            } 
-            
-             else {
-              nav.classList.remove("bg-light", "shadow");
-            }
-        });
- 
-HUr det såg ut innan jag började härja:
-        window.addEventListener("scroll", function () {
-            if (window.pageYOffset > 50) {
-                  addShadow();
-            } 
-            else {
-              nav.classList.remove("bg-light", "shadow");
-            }
-        });
-        function addShadow() {
-        	nav.classList.add("bg-light", "shadow");
-        }
-
-         
- undvika inline scrip. inte ha scrit i html koden. Tipps från Grabs
-      var knapp = document.querySelector("#hamburger-button")
-      knapp.addEventListener("click", () => {
-        console.log("Hej");
-      } )
-        */
-       
-    -->
-
+<!--NAVBAR SLUT-->
 
     </header>
     <div class="container main-area">
@@ -200,6 +158,7 @@ HUr det såg ut innan jag började härja:
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
+
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
