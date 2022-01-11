@@ -103,3 +103,7 @@ dist
 # TernJS port file
 .tern-port
 
+# custom ignore för jason filen
+.vscode/
+.vs/
+
