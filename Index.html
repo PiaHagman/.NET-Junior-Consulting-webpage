@@ -31,9 +31,10 @@
     <!--Generel stylesheet-->
     <link rel="stylesheet" href="GeneralStyle.css" />
     <!--WelcomePage stylesheet-->
-    <link rel="stylesheet" href="StyleVälkomstsida.css" />
+    <link rel="stylesheet" href="StyleValkomstsida.css" />
   </head>
   <body class="homepage">
+
     <header>
       <!-- NAVBAR-->
       <div class="fixed-navbar">
@@ -41,10 +42,9 @@
         <!--.navbar-light stylar med förinställda färger. -->
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
-            <a href="Index.html"
+            <a href="index.html"
               ><img class="logo" src="/images/logo.png" />
             </a>
-            <!--TODO fråga Sofia om SVG bilder-->
             <!--.navbar-toggler determine when their content collapses behind a button. 
             HAMBURGEKNAPP FUNKTIONEN-->
             <button
@@ -67,16 +67,16 @@
               <!--.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).-->
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Om oss</a>
+                  <a class="nav-link" href="Kontaktsida/Index.html">Om oss</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blogg</a>
+                  <a class="nav-link" href="Bloggsida/Index.html">Blogg</a>
                 </li>
                 <!--Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.-->
                 <li class="nav-item dropdown profile-dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="Tjanster/index.html"
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -88,13 +88,14 @@
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <li><a class="dropdown-item" href="#">Webbsidor</a></li>
-                    <li><a class="dropdown-item" href="#">Databaser</a></li>
+                    <li><a class="dropdown-item" href="Tjanster/">Tjänster</a></li>
+                    <li><a class="dropdown-item" href="Tjanster/webbsidor.html">Webbsidor</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Mjukvarutestning</a>
+                      <a class="dropdown-item" href="Tjanster/mjukvarutest.html">Mjukvarutestning</a>
                     </li>
-                    <li><a class="dropdown-item" href="#">C#</a></li>
-                    <li><a class="dropdown-item" href="#">Javascript</a></li>
+                    <li><a class="dropdown-item" href="Tjanster/Databaser.html">Databaser</a></li>
+                    <li><a class="dropdown-item" href="Tjanster/javascript.html">Javascript</a></li>
+                    <li><a class="dropdown-item" href="Tjanster/csharp.html">C#</a></li>
                   </ul>
                 </li>
               </ul>
@@ -107,10 +108,10 @@
       Javasqrit kod för att skapa scrolleffecten på navbar
       - lägger till och tar bort bootstrapkod shadow och bg-light på nav
       - <50 är när effecten ska kicka igång
-      - function addShadow() har jag lagt till som onclick på toggler butten. = När den klickas på så ska bg light och navbar-light också läggas  till
-      
+      - functionen changeBgAndShadow() har jag lagt till dels som onclick på toggler butten. Men också 
+      efter en variabel togglerExpanded som via getAttribute("aria-expanded") gör att javascript kan känna av om toggler menyn
+      är öppen eller stängd.
       -->
-      
       <script>
       function changeBgAndShadow() 
       {
@@ -124,10 +125,9 @@
 
           document.getElementById("hamburger-button").setAttribute("aria-expanded", togglerExpanded);
       }
-      
+
       var nav = document.querySelector("nav"); 
-     
-               
+            
       window.addEventListener("scroll", function () 
         {
             if (window.pageYOffset > 50) {
@@ -136,49 +136,9 @@
             else {
               nav.classList.remove("bg-light", "shadow");
             }
-            
         });
-
       </script>
-  
-
-  <!--
-
-  OMG JAg löste det med att bara ta bort denna else stats här !!!!! 
-  window.addEventListener("scroll", function () 
-        {
-            if (window.pageYOffset > 50) {
-              changeBgAndShadow();
-            } 
-            
-             else {
-              nav.classList.remove("bg-light", "shadow");
-            }
-        });
- 
-HUr det såg ut innan jag började härja:
-        window.addEventListener("scroll", function () {
-            if (window.pageYOffset > 50) {
-                  addShadow();
-            } 
-            else {
-              nav.classList.remove("bg-light", "shadow");
-            }
-        });
-        function addShadow() {
-        	nav.classList.add("bg-light", "shadow");
-        }
-
-         
- undvika inline scrip. inte ha scrit i html koden. Tipps från Grabs
-      var knapp = document.querySelector("#hamburger-button")
-      knapp.addEventListener("click", () => {
-        console.log("Hej");
-      } )
-        */
-       
-    -->
-
+<!--NAVBAR SLUT-->
 
     </header>
     <div class="container main-area">
@@ -199,6 +159,7 @@ HUr det såg ut innan jag började härja:
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
+
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -239,7 +200,7 @@ HUr det såg ut innan jag började härja:
             frontend och backend. Att vi är juniora är vår styrka och
             anledningen till våra förmåliga priser.
           </p>
-          <button>Om oss</button>
+          <a class="btn btn-secondary" href="Kontaktsida/Index.html" role="button">Kontakta oss</a>
         </div>
         <div class="box">
           <span class="box-icon">
@@ -251,7 +212,7 @@ HUr det såg ut innan jag började härja:
             design av ny hemsida eller app eller utveckling av en solid backend. Vi har goda referenser från tidigare uppdrag. Besök vår github eller se vår blogg för 
             att ta del av tidigare projekt. 
           </p>
-          <button>Blogg</button>
+          <a class="btn btn-secondary" href="Bloggsida/Index.html" role="button">Uppdrag</a>
         </div>
         <div class="box">
           <span class="box-icon">
@@ -263,7 +224,7 @@ HUr det såg ut innan jag började härja:
             Alla våra utvecklare har ett brinnande engagemang och ett stort ansvarstagande. Vår vison är att kunna 
             hjälpa kunder realisera era digitala lösningar till ett rimligt pris. Hur gör vi det? Kontakta oss så berättar vi mer!
           </p>
-          <button>Tjänster</button>
+          <a class="btn btn-secondary" href="Produktsida/Index.html" role="button">Tjänster</a>
         </div>
       </div>
       <div class="lower-area">
