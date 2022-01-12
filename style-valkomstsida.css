@@ -35,7 +35,7 @@ body,
   padding: 20px;
   font-size: 300%;
   text-align: center;
-  text-shadow: #386369 1px 1px 1px;
+  color: #386369;
 }
 
 .upper-area p {
@@ -79,6 +79,11 @@ body,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.middle-area .box-title {
+  font-family: "Noto Serif", serif;
+  color: #386369;
 }
 
 /*bara för att fylla ut*/
