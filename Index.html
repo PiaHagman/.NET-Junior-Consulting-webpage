@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="”description”"
+      content="Vi erbjuder prisvärda It-tjänster till fast pris. Vi är utbildade juniora .NET utvecklare med stor kunskap och brinnande engagemang"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>.NET Junior Consulting | Billiga It-tjänster</title>
+    <title>.NET Junior Consulting | Prisvärda It-tjänster</title>
 
     <!--Bootstrap stylesheet-->
     <link
@@ -34,7 +38,6 @@
     <link rel="stylesheet" href="style-valkomstsida.css" />
   </head>
   <body class="homepage">
-
     <header>
       <!-- NAVBAR-->
       <div class="fixed-navbar">
@@ -88,14 +91,34 @@
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <li><a class="dropdown-item" href="Tjanster/">Tjänster</a></li>
-                    <li><a class="dropdown-item" href="Tjanster/webbsidor.html">Webbsidor</a></li>
                     <li>
-                      <a class="dropdown-item" href="Tjanster/mjukvarutest.html">Mjukvarutestning</a>
+                      <a class="dropdown-item" href="Tjanster/">Tjänster</a>
                     </li>
-                    <li><a class="dropdown-item" href="Tjanster/Databaser.html">Databaser</a></li>
-                    <li><a class="dropdown-item" href="Tjanster/javascript.html">Javascript</a></li>
-                    <li><a class="dropdown-item" href="Tjanster/csharp.html">C#</a></li>
+                    <li>
+                      <a class="dropdown-item" href="Tjanster/webbsidor.html"
+                        >Webbsidor</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Tjanster/mjukvarutest.html"
+                        >Mjukvarutestning</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Tjanster/Databaser.html"
+                        >Databaser</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Tjanster/javascript.html"
+                        >Javascript</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Tjanster/csharp.html"
+                        >C#</a
+                      >
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -113,37 +136,36 @@
       är öppen eller stängd.
       -->
       <script>
-      function changeBgAndShadow() 
-      {
-          var togglerExpanded = document.getElementById("hamburger-button").getAttribute("aria-expanded"); 
-          if (togglerExpanded== "true" || window.pageYOffset > 50 ){
+        function changeBgAndShadow() {
+          var togglerExpanded = document
+            .getElementById("hamburger-button")
+            .getAttribute("aria-expanded");
+          if (togglerExpanded == "true" || window.pageYOffset > 50) {
             nav.classList.add("bg-light", "shadow");
-          } 
-          else {
+          } else {
             nav.classList.remove("bg-light", "shadow");
           }
 
-          document.getElementById("hamburger-button").setAttribute("aria-expanded", togglerExpanded);
-      }
+          document
+            .getElementById("hamburger-button")
+            .setAttribute("aria-expanded", togglerExpanded);
+        }
 
-      var nav = document.querySelector("nav"); 
-            
-      window.addEventListener("scroll", function () 
-        {
-            if (window.pageYOffset > 50) {
-              changeBgAndShadow();
-            } 
-            else {
-              nav.classList.remove("bg-light", "shadow");
-            }
+        var nav = document.querySelector("nav");
+
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 50) {
+            changeBgAndShadow();
+          } else {
+            nav.classList.remove("bg-light", "shadow");
+          }
         });
       </script>
-<!--NAVBAR SLUT-->
-
+      <!--NAVBAR SLUT-->
     </header>
     <div class="container main-area">
       <div class="upper-area">
-        <h1 class="logo">Vi är framtidens utvecklare</h1>
+        <h1 class="logo">Prisvärda It-tjänster från juniora utvecklare</h1>
         <p>
           Vi erbjuder tjänster inom backend, frontend och fullstack. Vi skapar
           allt från hemsidor och appar till pålitliga databaser och med våra
@@ -151,43 +173,87 @@
           inom .NET. Allt till förmånliga och billiga priser.
         </p>
         <!--modal-->
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div
+          class="modal fade"
+          id="exampleModalToggle"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1"
+        >
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalToggleLabel">Skriv in din email så kontaktar vi dig!</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="exampleModalToggleLabel">
+                  Skriv in din email så kontaktar vi dig!
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
               <div class="modal-body">
-
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="name@example.com"
+                  />
                 </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Skicka</button>
+                <button
+                  class="btn btn-secondary"
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  Skicka
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div
+          class="modal fade"
+          id="exampleModalToggle2"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalToggleLabel2">Tack! Vi återkommer om 24h!</h5>
+                <h5 class="modal-title" id="exampleModalToggleLabel2">
+                  Tack! Vi återkommer om 24h!
+                </h5>
                 <div class="modal-footer">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a class="btn btn-secondary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Kontakta oss</a>
+        <a
+          class="btn btn-secondary"
+          data-bs-toggle="modal"
+          href="#exampleModalToggle"
+          role="button"
+          >Kontakta oss</a
+        >
+      </div>
       <div class="divder-area"><span></span></div>
       <!--TODO ta bort det hen här divider diven?-->
       <div class="middle-area">
-        
         <div class="box">
           <span class="box-icon">
             <i class="fa fa-book" aria-hidden="true"></i>
@@ -196,11 +262,16 @@
           <div class="box-title">Erfarenhet</div>
           <p class="box-text">
             Våra juniora utvecklare är alla utbildade Webbutvecklare inom .NET
-         och har en bred och praktiskt kunskap inom både
-            frontend och backend. Att vi är juniora är vår styrka och
-            anledningen till våra förmåliga priser.
+            och har en bred och praktiskt kunskap inom både frontend och
+            backend. Att vi är juniora är vår styrka och anledningen till våra
+            förmåliga priser.
           </p>
-          <a class="btn btn-secondary" href="Kontaktsida/Index.html" role="button">Kontakta oss</a>
+          <a
+            class="btn btn-secondary"
+            href="Kontaktsida/Index.html"
+            role="button"
+            >Kontakta oss</a
+          >
         </div>
         <div class="box">
           <span class="box-icon">
@@ -208,11 +279,14 @@
           </span>
           <div class="box-title">Uppdrag</div>
           <p class="box-text">
-            Våra juniora utvecklare kan hjälpa just ditt företag med allt från 
-            design av ny hemsida eller app eller utveckling av en solid backend. Vi har goda referenser från tidigare uppdrag. Besök vår github eller se vår blogg för 
-            att ta del av tidigare projekt. 
+            Vi kan hjälpa just ditt företag med design av ny hemsida eller app
+            samt utveckling av en pålitlig backend. Vi har goda referenser från
+            tidigare uppdrag. Besök vår github eller se vår blogg för att ta del
+            av tidigare projekt.
           </p>
-          <a class="btn btn-secondary" href="Bloggsida/Index.html" role="button">Uppdrag</a>
+          <a class="btn btn-secondary" href="Bloggsida/Index.html" role="button"
+            >Uppdrag</a
+          >
         </div>
         <div class="box">
           <span class="box-icon">
@@ -221,19 +295,23 @@
 
           <div class="box-title">Effektiva utvecklare</div>
           <p class="box-text">
-            Alla våra utvecklare har ett brinnande engagemang och ett stort ansvarstagande. Vår vison är att kunna 
-            hjälpa kunder realisera era digitala lösningar till ett rimligt pris. Hur gör vi det? Kontakta oss så berättar vi mer!
+            Alla våra utvecklare har ett brinnande engagemang och ett stort
+            ansvarstagande. Vår vison är att kunna hjälpa kunder realisera era
+            digitala lösningar till ett rimligt pris. Hur gör vi det? Kontakta
+            oss så berättar vi mer!
           </p>
-          <a class="btn btn-secondary" href="Produktsida/Index.html" role="button">Tjänster</a>
+          <a
+            class="btn btn-secondary"
+            href="Produktsida/Index.html"
+            role="button"
+            >Tjänster</a
+          >
         </div>
       </div>
-      <div class="lower-area">
-       
-      </div>
+      <div class="lower-area"></div>
     </div>
-  
-    <!--Bootstrap javascrip länk-->
 
+    <!--Bootstrap javascrip länk-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
