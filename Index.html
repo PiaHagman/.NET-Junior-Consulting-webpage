@@ -212,7 +212,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalToggleLabel">
-                  Skriv in din email så kontaktar vi dig!
+                  Skriv in din mejladress så kontaktar vi dig inom 24 timmar:
                 </h5>
                 <button
                   type="button"
@@ -222,17 +222,16 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="name@example.com"
-                  />
-                </div>
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                </form>
               </div>
               <div class="modal-footer">
                 <button
@@ -240,6 +239,7 @@
                   class="btn btn-secondary"
                   data-bs-target="#exampleModalToggle2"
                   data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
                 >
                   Skicka
                 </button>
@@ -258,7 +258,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalToggleLabel2">
-                  Tack! Vi återkommer om 24h!
+                  Tack, Vi hör av oss!
                 </h5>
                 <div class="modal-footer">
                   <button
@@ -285,21 +285,18 @@
       <div class="middle-area">
         <div class="box">
           <span class="box-icon">
-            <i class="fa fa-book" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
           </span>
 
-          <div class="box-title">Erfarenhet</div>
+          <div class="box-title">Effektiva utvecklare</div>
           <p class="box-text">
-            Våra juniora utvecklare är alla utbildade Webbutvecklare inom .NET
-            och har en bred och praktiskt kunskap inom både frontend och
-            backend. Att vi är juniora är vår styrka och anledningen till våra
-            förmåliga priser.
+            Alla våra utvecklare har ett brinnande engagemang och ett stort
+            ansvarstagande. Vår vison är att kunna hjälpa kunder realisera era
+            digitala lösningar till ett rimligt pris. Hur gör vi det? Kontakta
+            oss så berättar vi mer!
           </p>
-          <a
-            class="btn btn-secondary"
-            href="Kontaktsida/Index.html"
-            role="button"
-            >Kontakta oss</a
+          <a class="btn btn-secondary" href="Tjanster/index.html" role="button"
+            >Tjänster</a
           >
         </div>
         <div class="box">
@@ -317,21 +314,21 @@
         </div>
         <div class="box">
           <span class="box-icon">
-            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-book" aria-hidden="true"></i>
           </span>
 
-          <div class="box-title">Effektiva utvecklare</div>
+          <div class="box-title">Erfarenhet</div>
           <p class="box-text">
-            Alla våra utvecklare har ett brinnande engagemang och ett stort
-            ansvarstagande. Vår vison är att kunna hjälpa kunder realisera era
-            digitala lösningar till ett rimligt pris. Hur gör vi det? Kontakta
-            oss så berättar vi mer!
+            Våra juniora utvecklare är alla utbildade Webbutvecklare inom .NET
+            och har en bred och praktiskt kunskap inom både frontend och
+            backend. Att vi är juniora är vår styrka och anledningen till våra
+            förmåliga priser.
           </p>
           <a
             class="btn btn-secondary"
-            href="Produktsida/Index.html"
+            href="Kontaktsida/Index.html"
             role="button"
-            >Tjänster</a
+            >Kontakta oss</a
           >
         </div>
       </div>
