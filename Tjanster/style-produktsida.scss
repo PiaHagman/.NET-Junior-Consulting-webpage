@@ -103,11 +103,24 @@ color: white;
   text-align: center;
   align-items: center;
   margin-bottom: 25px;
+  
 
   & p {
     font-size: 120%;
     font-style: italic;
   }
+
+  &:hover{
+    cursor:default;
+  }
+  & div.my-button:hover{
+    cursor: pointer;
+  }
+  & a:hover{
+    color:white;
+  }
+
+  
 }
 .img-mobile{
   display: none;
@@ -168,13 +181,6 @@ color: white;
     font-size: 35px;
   }
 
-  /* .navbar-nav{
-    background-color: #f8f9fa;
-    text-align: right;
-    padding: 5px;
-    width: 40%;
-    border-radius: 5px;
-  } */
   
 /*@media index.html-------------------*/
 .topbanner {
@@ -321,18 +327,18 @@ color: white;
 .image{
   display: none;
 }
+.pagination{
+    font-size: 12px;    
+  }
+  .page-link{
+    padding: 3px;
+  }
+
+  .card-title-coffee{
+    text-align: left;
+  }
 }
 
-@media (max-width: 600px) {
-  
-  .pagination{
-    //display:none;
-    font-size: 12px;    
-    }
-    .page-link{
-      padding: 3px;
-    }
-  }
 
 
 @media (max-width: 1018px){
@@ -348,23 +354,9 @@ color: white;
     width: 75%;
     height: 75%;
   }
+  .card-title-coffee{
+    color: white;
+  }
 }
 
-footer{
-  background-color: #19383d;
-}
-.my-footer{
-  display: flex;
-  flex-direction: row !important;
-  color: white;
-}
 
-.my-footer-left, .my-footer-center, .my-footer-right{
-  flex: 1 1 33.33%;
-  padding: 55px 50px;
-  //border: 3px solid red;
-}
-
-.my-footer a{
-  color: white;
-}

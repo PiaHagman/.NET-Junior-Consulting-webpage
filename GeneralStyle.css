@@ -39,7 +39,7 @@ h2{
   color: #4f5a57;
 }
 
-button {
+.my-button {
   text-align: center;
   background-color: #527177;
   border: #386369 2px solid;
@@ -51,20 +51,22 @@ button {
   width: fit-content;
   margin-top: 8px;
   color: white;
-}
-
-button a {
-  color: white;
   text-decoration: none;
 }
-button:hover,
-button a:hover {
+
+.my-button a {
+  color: white;
+  text-decoration: none;
+  
+}
+.my-button:hover,
+.my-button a:hover {
   background-color: #19383d;
   color: white;
 }
 
-.navbar button:hover,
-button a:hover {
+.navbar .button:hover,
+.my-button a:hover {
   background-color: transparent;
 }
 

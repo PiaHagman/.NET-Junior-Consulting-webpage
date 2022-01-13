@@ -132,6 +132,18 @@ button a.card-link:hover {
   font-style: italic;
 }
 
+.quote-card:hover {
+  cursor: default;
+}
+
+.quote-card div.my-button:hover {
+  cursor: pointer;
+}
+
+.quote-card a:hover {
+  color: white;
+}
+
 .img-mobile {
   display: none;
 }
@@ -212,13 +224,6 @@ button a.card-link:hover {
   h1 {
     font-size: 35px;
   }
-  /* .navbar-nav{
-    background-color: #f8f9fa;
-    text-align: right;
-    padding: 5px;
-    width: 40%;
-    border-radius: 5px;
-  } */
   /*@media index.html-------------------*/
   .topbanner {
     background-image: none;
@@ -365,14 +370,14 @@ button a.card-link:hover {
   .image {
     display: none;
   }
-}
-
-@media (max-width: 600px) {
   .pagination {
     font-size: 12px;
   }
   .page-link {
     padding: 3px;
+  }
+  .card-title-coffee {
+    text-align: left;
   }
 }
 
@@ -391,31 +396,8 @@ button a.card-link:hover {
     width: 75%;
     height: 75%;
   }
-}
-
-footer {
-  background-color: #19383d;
-}
-
-.my-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: row !important;
-          flex-direction: row !important;
-  color: white;
-}
-
-.my-footer-left, .my-footer-center, .my-footer-right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33.33%;
-          flex: 1 1 33.33%;
-  padding: 55px 50px;
-}
-
-.my-footer a {
-  color: white;
+  .card-title-coffee {
+    color: white;
+  }
 }
 /*# sourceMappingURL=style-produktsida.css.map */
