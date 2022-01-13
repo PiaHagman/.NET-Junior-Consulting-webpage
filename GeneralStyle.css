@@ -29,7 +29,13 @@
 
 h1 {
   font-family: "Noto Serif", serif;
-  font-size: 300%;
+  font-size: 60px;
+  color: #4f5a57;
+}
+
+h2{
+  font-family: "Noto Serif", serif;
+  font-size: 30px;
   color: #4f5a57;
 }
 
@@ -61,3 +67,4 @@ button a:hover {
 button a:hover {
   background-color: transparent;
 }
+

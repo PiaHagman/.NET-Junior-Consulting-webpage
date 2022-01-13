@@ -3,7 +3,7 @@
 } */
 body {
   background-color: #e6eded;
-  color: #19383d; /*Text-färg*/
+  color: rgb(25, 56, 61); /*Text-färg*/
 }
 
 a {
@@ -57,13 +57,17 @@ a {
     height: 100%;
     width: 100%;
     opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
-    /*transition: all 0.3s;*/
+    background: rgba(25, 56, 61, 0.5); 
+    transition: all 0.3s;
     color: white;
     cursor: pointer;
-    filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
+    filter: drop-shadow(10px 10px 10px grey);
   }
 }
+.card-img-top:hover{
+  filter: grayscale(70%);
+}
+
 button a.card-link:hover{
 color: white;
 }
@@ -79,6 +83,7 @@ color: white;
     width: 100%;
     background: rgba(255, 255, 255, 0);
     color: #4f5a57;
+    filter: grayscale(70%);
     
   }
   & a:hover{
@@ -90,6 +95,7 @@ color: white;
   border-radius: 4px;
   size: 120%;
   overflow: hidden;
+
 }
 .quote-card {
   background-color: white;
@@ -318,6 +324,7 @@ color: white;
 }
 
 @media (max-width: 600px) {
+  
   .pagination{
     //display:none;
     font-size: 12px;    
@@ -343,4 +350,21 @@ color: white;
   }
 }
 
+footer{
+  background-color: #19383d;
+}
+.my-footer{
+  display: flex;
+  flex-direction: row !important;
+  color: white;
+}
 
+.my-footer-left, .my-footer-center, .my-footer-right{
+  flex: 1 1 33.33%;
+  padding: 55px 50px;
+  //border: 3px solid red;
+}
+
+.my-footer a{
+  color: white;
+}

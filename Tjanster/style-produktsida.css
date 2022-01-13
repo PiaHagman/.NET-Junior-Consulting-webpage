@@ -73,12 +73,18 @@ a:hover {
   height: 100%;
   width: 100%;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
-  /*transition: all 0.3s;*/
+  background: rgba(25, 56, 61, 0.5);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   color: white;
   cursor: pointer;
-  -webkit-filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
-          filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
+  -webkit-filter: drop-shadow(10px 10px 10px grey);
+          filter: drop-shadow(10px 10px 10px grey);
+}
+
+.card-img-top:hover {
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
 }
 
 button a.card-link:hover {
@@ -97,6 +103,8 @@ button a.card-link:hover {
   width: 100%;
   background: rgba(255, 255, 255, 0);
   color: #4f5a57;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
 }
 
 .my-image-card a:hover {
@@ -383,5 +391,31 @@ button a.card-link:hover {
     width: 75%;
     height: 75%;
   }
+}
+
+footer {
+  background-color: #19383d;
+}
+
+.my-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  color: white;
+}
+
+.my-footer-left, .my-footer-center, .my-footer-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.33%;
+          flex: 1 1 33.33%;
+  padding: 55px 50px;
+}
+
+.my-footer a {
+  color: white;
 }
 /*# sourceMappingURL=style-produktsida.css.map */
