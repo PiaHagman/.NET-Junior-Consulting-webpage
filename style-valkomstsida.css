@@ -11,11 +11,10 @@ body,
   background: rgb(220, 228, 227, 0.3) url(/images/bethany-legg-mobile-alt2.jpg)
     no-repeat;
   height: 100%;
-  background-position: center;
 }
 .main-area {
   display: grid;
-  grid-template-rows: 110px 1fr 50px 1fr 1fr;
+  grid-template-rows: 110px 1fr 50px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100%;
 }
@@ -26,45 +25,25 @@ body,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 5%;
 }
 
 .upper-area h1 {
   margin-top: 55px;
-  padding: 20px;
-  font-size: 300%;
+  padding: 10px;
+  font-size: 50px;
   text-align: center;
-  text-shadow: #386369 1px 1px 1px;
+  color: #386369;
 }
 
-.upper-area p {
+.upper-area h2 {
+  margin-bottom: 50px;
+  font-size: 25px;
   text-align: center;
-  max-width: 900px;
-}
-.btn-secondary {
-  background-color: #527177;
-  border: #386369 2px solid;
-  border-radius: 4px;
-  box-shadow: none;
 }
 
-.btn-secondary:focus {
-  background-color: #527177;
-  border: #386369 2px solid;
-  border-radius: 4px;
-  box-shadow: none;
-}
-
-.btn-secondary:hover {
-  background-color: #19383d;
-  border: #386369 2px solid;
-  border-radius: 4px;
-}
-
-.btn-secondary:active {
-  border: #386369 2px solid;
-  box-shadow: none;
+.modal-footer {
+  border-top: none;
 }
 
 .divder-area {
@@ -81,11 +60,9 @@ body,
   align-items: center;
 }
 
-/*bara för att fylla ut*/
-.lower-area {
-  grid-area: 5/1/6/4;
-  display: flex;
-  height: 300px;
+.middle-area .box-title {
+  font-family: "Noto Serif", serif;
+  color: #386369;
 }
 
 .box {
@@ -94,7 +71,7 @@ body,
   justify-content: center;
   align-items: center;
 
-  background-color: rgba(230, 237, 237, 0.8);
+  background-color: rgb(220, 228, 227, 0.3);
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 30px;
@@ -119,11 +96,25 @@ body,
   padding: 10px;
 }
 
+footer {
+  display: none;
+}
+
 @media (min-width: 600px) {
   body,
   .homepage {
-    background: url(/images/bethany-legg-75nbwHfDsnY-unsplash.jpg) no-repeat;
+    background-color: rgba(#f6f5f2);
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(237, 234, 230, 0.3)
+      ),
+      url(/images/bethany-legg-desktop-alt2.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    /*background: url(/images/bethany-legg-desktop-alt2.jpg) no-repeat;
+    background-size: cover;
+    */
   }
 
   .middle-area {
@@ -135,6 +126,10 @@ body,
   }
 
   .box {
-    background-color: rgba(230, 237, 237, 0.5);
+    background-color: rgba(230, 237, 237, 0.1);
+  }
+
+  footer {
+    display: block;
   }
 }
