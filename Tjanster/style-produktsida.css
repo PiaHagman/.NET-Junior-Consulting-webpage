@@ -219,6 +219,10 @@ button a.card-link:hover {
   color: #19383d;
 }
 
+.pagination {
+  margin-bottom: 40px;
+}
+
 /*Responsivitet*/
 @media (max-width: 600px) {
   h1 {
@@ -398,6 +402,12 @@ button a.card-link:hover {
   }
   .card-title-coffee {
     color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: none;
   }
 }
 /*# sourceMappingURL=style-produktsida.css.map */

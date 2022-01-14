@@ -3,7 +3,7 @@
 } */
 body {
   background-color: #e6eded;
-  color: rgb(25, 56, 61); /*Text-färg*/
+  color: #19383d; /*Text-färg*/
 }
 
 a {
@@ -173,6 +173,10 @@ color: white;
   &:hover{
     color: #19383d;
   }
+}
+
+.pagination{
+  margin-bottom: 40px;
 }
 /*Responsivitet*/
 @media (max-width: 600px) {
@@ -358,5 +362,9 @@ color: white;
     color: white;
   }
 }
-
+@media (max-width: 768px){
+footer{
+  display: none;
+}
+}
 
