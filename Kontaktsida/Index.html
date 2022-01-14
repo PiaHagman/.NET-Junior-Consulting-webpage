@@ -31,8 +31,8 @@
   />
 
 
-<link rel="stylesheet" href="/HTML_CSS_projektarbete/GeneralStyle.css">
-<link rel="stylesheet" href="/HTML_CSS_projektarbete/Kontaktsida/css/style-kontaktsida.css">
+<link rel="stylesheet" href="../GeneralStyle.css">
+<link rel="stylesheet" href="css/style-kontaktsida.css">
 
 
 
@@ -45,8 +45,8 @@
       <!--.navbar-light stylar med förinställda färger. -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a href="/HTML_CSS_projektarbete/Index.html"
-            ><img class="logo" src="/HTML_CSS_projektarbete/images/logo.png" />
+          <a href="../Index.html"
+            ><img class="logo" src="../images/logo.png" />
           </a>
           <!--.navbar-toggler determine when their content collapses behind a button. 
           HAMBURGEKNAPP FUNKTIONEN-->
@@ -70,16 +70,16 @@
             <!--.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).-->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/HTML_CSS_projektarbete/Kontaktsida/Index.html">Om oss</a>
+                <a class="nav-link" href="Index.html">Om oss</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/HTML_CSS_projektarbete/Bloggsida/Index.html">Blogg</a>
+                <a class="nav-link" href="#">Blogg</a>
               </li>
               <!--Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.-->
               <li class="nav-item dropdown profile-dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="/HTML_CSS_projektarbete/Tjanster/index.html"
+                  href="../Tjanster/index.html"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -91,14 +91,14 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item" href="Tjanster/">Tjänster</a></li>
-                  <li><a class="dropdown-item" href="Tjanster/webbsidor.html">Webbsidor</a></li>
+                  <li><a class="dropdown-item" href="../Tjanster/">Tjänster</a></li>
+                  <li><a class="dropdown-item" href="../Tjanster/webbsidor.html">Webbsidor</a></li>
                   <li>
-                    <a class="dropdown-item" href="Tjanster/mjukvarutest.html">Mjukvarutestning</a>
+                    <a class="dropdown-item" href="../Tjanster/mjukvarutest.html">Mjukvarutestning</a>
                   </li>
-                  <li><a class="dropdown-item" href="Tjanster/Databaser.html">Databaser</a></li>
-                  <li><a class="dropdown-item" href="Tjanster/javascript.html">Javascript</a></li>
-                  <li><a class="dropdown-item" href="Tjanster/csharp.html">C#</a></li>
+                  <li><a class="dropdown-item" href="../Tjanster/Databaser.html">Databaser</a></li>
+                  <li><a class="dropdown-item" href="../Tjanster/javascript.html">Javascript</a></li>
+                  <li><a class="dropdown-item" href="../Tjanster/csharp.html">C#</a></li>
                 </ul>
               </li>
             </ul>
@@ -107,14 +107,7 @@
       </nav>
     </div>
 
-    <!--
-    Javasqrit kod för att skapa scrolleffecten på navbar
-    - lägger till och tar bort bootstrapkod shadow och bg-light på nav
-    - <50 är när effecten ska kicka igång
-    - functionen changeBgAndShadow() har jag lagt till dels som onclick på toggler butten. Men också 
-    efter en variabel togglerExpanded som via getAttribute("aria-expanded") gör att javascript kan känna av om toggler menyn
-    är öppen eller stängd.
-    -->
+
     <script>
     function changeBgAndShadow() 
     {
@@ -176,7 +169,7 @@
   </div>
   <!---->
   
-  
+    
   <div class="testimotionals">
     <div class="card">
       <div class="layer">
@@ -185,7 +178,7 @@
       <div class="content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto ea tenetur quas facere minima obcaecati mollitia sed ipsum quod, eius repellat nihil quos. Saepe ipsa veritatis magni voluptates voluptatum.</p>
         <div class="image">
-          <img  width="120px" src="/HTML_CSS_projektarbete/Kontaktsida/img/pia2.JPG" alt="">
+          <img  width="120px" src="img/pia2.JPG" alt="">
           
         </div>
         <div class="details">
@@ -205,7 +198,7 @@
       <div class="content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto ea tenetur quas facere minima obcaecati mollitia sed ipsum quod, eius repellat nihil quos. Saepe ipsa veritatis magni voluptates voluptatum.</p>
         <div class="image">
-          <img align="center" width="90px"  src="/HTML_CSS_projektarbete/Kontaktsida/img/profilePicSmall.jpg" alt="">
+          <img align="center" width="90px"  src="img/profilePicSmall.jpg" alt="">
           
         </div>
         <div class="details">
@@ -223,7 +216,7 @@
       <div class="content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto ea tenetur quas facere minima obcaecati mollitia sed ipsum quod, eius repellat nihil quos. Saepe ipsa veritatis magni voluptates voluptatum.</p>
         <div class="image">
-          <img align="center" width="90px"  src="/HTML_CSS_projektarbete/Kontaktsida/img/Screenshot_20220107-184240_Gallery.jpg" alt="">
+          <img align="center" width="90px"  src="img/Screenshot_20220107-184240_Gallery.jpg" alt="">
           
         </div>
         <div class="details">
@@ -260,8 +253,8 @@
     <div class="container my-footer">
   
       <div class="my-footer-left">
-          <a href="/HTML_CSS_projektarbete/Index.html"
-            ><img class="logo" src="/HTML_CSS_projektarbete/Kontaktsida/img/logo.png" />
+          <a href="../Index.html"
+            ><img class="logo" src="img/logo.png" />
           </a>
 
          <p class="footer-company-name">.NET Junior Consulting © 2022</p>
@@ -301,6 +294,8 @@
 
 
   </footer>
+  <!--Bootstrap javascrip länk-->
   
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -37,10 +37,15 @@ nav {
 
 h1 {
   font-family: "Noto Serif", serif;
-  font-size: 300%;
+  font-size: 60px;
   color: #4f5a57;
 }
 
+h2{
+  font-family: "Noto Serif", serif;
+  font-size: 30px;
+  color: #4f5a57;
+}
 .navbar-toggle {
   transition: 2s;
 }
@@ -162,3 +167,4 @@ footer {
   margin-right: 15px;
   border-radius: 10px;
 }
+

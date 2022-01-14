@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* *{
     border: 3px solid black;
-    margin: 10px;
-    padding: 20px;
 } */
 body {
   background-color: #e6eded;
@@ -40,10 +38,6 @@ a:hover {
           clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
 }
 
-.topbanner-navpage {
-  opacity: 0.5;
-}
-
 .topbanner-text {
   text-align: center;
   position: absolute;
@@ -79,12 +73,18 @@ a:hover {
   height: 100%;
   width: 100%;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
-  /*transition: all 0.3s;*/
+  background: rgba(25, 56, 61, 0.5);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   color: white;
   cursor: pointer;
-  -webkit-filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
-          filter: drop-shadow(10px 10px 10px grey) grayscale(70%);
+  -webkit-filter: drop-shadow(10px 10px 10px grey);
+          filter: drop-shadow(10px 10px 10px grey);
+}
+
+.card-img-top:hover {
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
 }
 
 button a.card-link:hover {
@@ -103,6 +103,8 @@ button a.card-link:hover {
   width: 100%;
   background: rgba(255, 255, 255, 0);
   color: #4f5a57;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
 }
 
 .my-image-card a:hover {
@@ -130,9 +132,20 @@ button a.card-link:hover {
   font-style: italic;
 }
 
+.quote-card:hover {
+  cursor: default;
+}
+
+.quote-card div.my-button:hover {
+  cursor: pointer;
+}
+
+.quote-card a:hover {
+  color: white;
+}
+
 .img-mobile {
-  visibility: hidden;
-  height: 0;
+  display: none;
 }
 
 /*Tjänster undersidor-------------------*/
@@ -206,28 +219,24 @@ button a.card-link:hover {
   color: #19383d;
 }
 
+.pagination {
+  margin-bottom: 40px;
+}
+
 /*Responsivitet*/
 @media (max-width: 600px) {
   h1 {
     font-size: 35px;
   }
-  .my-logo {
-    width: 70%;
-  }
-  .navbar-nav {
-    background-color: #f8f9fa;
-    text-align: right;
-    padding: 5px;
-    width: 40%;
-    border-radius: 5px;
-  }
   /*@media index.html-------------------*/
   .topbanner {
     background-image: none;
-    -webkit-clip-path: none;
-            clip-path: none;
-    margin-top: 100px;
-    height: 400px;
+    background-color: white;
+    height: 550px;
+  }
+  .topbanner-text {
+    width: 80%;
+    padding-top: 10%;
   }
   .p-5 {
     padding: 5px !important;
@@ -240,11 +249,14 @@ button a.card-link:hover {
     display: none;
   }
   .img-mobile {
-    visibility: visible;
+    display: block;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     position: relative;
+  }
+  #card-webbsidor {
+    margin-top: 25px;
   }
   .card-title-coffee {
     color: white;
@@ -328,7 +340,7 @@ button a.card-link:hover {
             clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
   }
   .my-background-javascript {
-    background-color: #d1aba4;
+    background-color: white;
     height: 450px;
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
             clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
@@ -346,7 +358,7 @@ button a.card-link:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
-    margin-top: 15%;
+    margin-top: 20%;
     padding: 5%;
     text-align: center;
     opacity: 1;
@@ -362,10 +374,39 @@ button a.card-link:hover {
   .image {
     display: none;
   }
+  .pagination {
+    font-size: 12px;
+  }
+  .page-link {
+    padding: 3px;
+  }
+  .card-title-coffee {
+    text-align: left;
+  }
 }
 
-@media (max-width: 500px) {
-  .pagination {
+@media (max-width: 1018px) {
+  .img-laptop {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  #my-logo {
+    width: 75%;
+    height: 75%;
+  }
+  .card-title-coffee {
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
     display: none;
   }
 }
