@@ -3,22 +3,163 @@
 <head>
 
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>kontaktsida</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="stylesheet" href="/HTML_CSS_projektarbete/Kontaktsida/css/style-kontaktsida.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+
 <link rel="stylesheet" href="/HTML_CSS_projektarbete/GeneralStyle.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" href="/HTML_CSS_projektarbete/Kontaktsida/css/style-kontaktsida.css">
 
 
 
 </head>
  <body>
+  <header>
+    <!-- NAVBAR-->
+    <div class="fixed-navbar">
+      <!--.navbar-expand-lg determine when their content collapses behind a button. -->
+      <!--.navbar-light stylar med förinställda färger. -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a href="/HTML_CSS_projektarbete/Index.html"
+            ><img class="logo" src="/HTML_CSS_projektarbete/images/logo.png" />
+          </a>
+          <!--.navbar-toggler determine when their content collapses behind a button. 
+          HAMBURGEKNAPP FUNKTIONEN-->
+          <button
+            onclick="changeBgAndShadow()"
+            class="navbar-toggler"
+            id="hamburger-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--.navbar-collapse determine when their content collapses behind a button. -->
+          <!-- "STOR BILD NAVBAR FUNKTION" -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- ms-auto mb-2 mb-lg-0 placerar navbar placerars till höger-->
+            <!--.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML_CSS_projektarbete/Kontaktsida/Index.html">Om oss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML_CSS_projektarbete/Bloggsida/Index.html">Blogg</a>
+              </li>
+              <!--Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.-->
+              <li class="nav-item dropdown profile-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/HTML_CSS_projektarbete/Tjanster/index.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tjänster
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="Tjanster/">Tjänster</a></li>
+                  <li><a class="dropdown-item" href="Tjanster/webbsidor.html">Webbsidor</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Tjanster/mjukvarutest.html">Mjukvarutestning</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Tjanster/Databaser.html">Databaser</a></li>
+                  <li><a class="dropdown-item" href="Tjanster/javascript.html">Javascript</a></li>
+                  <li><a class="dropdown-item" href="Tjanster/csharp.html">C#</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
- 
+    <!--
+    Javasqrit kod för att skapa scrolleffecten på navbar
+    - lägger till och tar bort bootstrapkod shadow och bg-light på nav
+    - <50 är när effecten ska kicka igång
+    - functionen changeBgAndShadow() har jag lagt till dels som onclick på toggler butten. Men också 
+    efter en variabel togglerExpanded som via getAttribute("aria-expanded") gör att javascript kan känna av om toggler menyn
+    är öppen eller stängd.
+    -->
+    <script>
+    function changeBgAndShadow() 
+    {
+        var togglerExpanded = document.getElementById("hamburger-button").getAttribute("aria-expanded"); 
+        if (togglerExpanded== "true" || window.pageYOffset > 50 ){
+          nav.classList.add("bg-light", "shadow");
+        } 
+        else {
+          nav.classList.remove("bg-light", "shadow");
+        }
+
+        document.getElementById("hamburger-button").setAttribute("aria-expanded", togglerExpanded);
+    }
+
+    var nav = document.querySelector("nav"); 
+          
+    window.addEventListener("scroll", function () 
+      {
+          if (window.pageYOffset > 50) {
+            changeBgAndShadow();
+          } 
+          else {
+            nav.classList.remove("bg-light", "shadow");
+          }
+      });
+    </script>
+<!--NAVBAR SLUT-->
+
+  </header>
+  <div class="main-content">
+    
+   <div class="about-us">
+     <h1 class="logo">Om oss</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p>
+
+   </div>
+
+   </div>
+   <div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">&nbsp;</p></div>
+   <div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">&nbsp;</p></div>
   <div class="testimotionals">
     <div class="card">
       <div class="layer">
@@ -26,12 +167,9 @@
       </div>
       <div class="content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto ea tenetur quas facere minima obcaecati mollitia sed ipsum quod, eius repellat nihil quos. Saepe ipsa veritatis magni voluptates voluptatum.</p>
-        <div class="image">
-          <img  width="60px" src="/HTML_CSS_projektarbete/Kontaktsida/img/New_Boss_Baby.png" alt="">
-          
-        </div>
+        
         <div class="details">
-          <h2> Baby Bossen <br> <span>Systemutvecklare</span></h2>
+          <h2> Sven Axelsson <br> <span>Systemutvecklare</span></h2>
         </div>
       </div>
     </div>
@@ -65,7 +203,7 @@
         
       </div>
       <div class="content">
-        <p>Glad och social med rötter i norrbotten. Utbildad audionom med lång erfarenhet från klinisk patientarbete. Styrkor: C# , backend och problemlösning.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto ea tenetur quas facere minima obcaecati mollitia sed ipsum quod, eius repellat nihil quos. Saepe ipsa veritatis magni voluptates voluptatum.</p>
         <div class="image">
           <img align="center" width="90px"  src="/HTML_CSS_projektarbete/Kontaktsida/img/profilePicSmall.jpg" alt="">
           
@@ -94,49 +232,74 @@
       </div>
     </div>
   </div>
+  <div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">&nbsp;</p></div>
+  <div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">&nbsp;</p></div>
+  <div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">&nbsp;</p></div>
+  
+  
+
+  <h1>Kontakta oss</h1>
+  <form class="cf">
+   <div class="half left cf">
+     <input type="text" id="input-name" placeholder="Namn">
+     <input type="email" id="input-email" placeholder="Email adress">
+     <input type="text" id="input-subject" placeholder="Ämne">
+   </div>
+   <div class="half right cf">
+     <textarea name="message" type="text" id="input-message" placeholder="Meddelande"></textarea>
+   </div>  
+   <input type="submit" value="Skicka" id="input-submit">
+ </form>
+
+ <div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">&nbsp;</p></div>
+ <div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">&nbsp;</p></div>
+ <div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">&nbsp;</p></div>
+ 
 
   <footer>
     <div class="container my-footer">
   
-      <div class="footer-left my-footer-left">
-        <img src="images/logo.png" alt="">
-        <p class="footer-company-name">.NET Junior Consulting © 2022</p>
+      <div class="my-footer-left">
+          <a href="/HTML_CSS_projektarbete/Index.html"
+            ><img class="logo" src="/HTML_CSS_projektarbete/Kontaktsida/img/logo.png" />
+          </a>
+
+         <p class="footer-company-name">.NET Junior Consulting © 2022</p>
       </div>
+
+
+      <div class="my-footer-center">
+
+          <div>
+            <a href="https://www.google.se/search?q=G%C3%B6teborgsv%C3%A4gen+73%2C+M%C3%B6lndal&sxsrf=AOaemvLjNXL_Os3iYT9fYkV8yka7MAPkOA%3A1642127086449&ei=7t7gYdfgGuaExc8P3PyOuAQ&oq=g%C3%B6teborgs+v%C3%A4gen+73+m&gs_lcp=Cgdnd3Mtd2l6EAMYADICCCYyAggmMgIIJjoJCAAQsAMQDRAeOgYIABANEB5KBAhBGAFKBAhGGABQswxY0Tlg-kNoAXAAeACAAVOIAaIBkgEBMpgBAKABAcgBAcABAQ&sclient=gws-wiz"><i class="fa fa-map-marker"></i></a>
+            <p><span>Göteborgsvägen 73</span>431 60 Mölndal</p>
+          </div>
   
-      <div class="footer-center my-footer-center"> 
-        <div>
-          <a href="https://www.google.se/maps/place/G%C3%B6teborgsv%C3%A4gen,+M%C3%B6lndal/@57.6651435,12.0099015,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff3cadb22df6d:0xe3da3623ffc86e4d!8m2!3d57.6651435!4d12.0120902%22%3E<i class="fa fa-map-marker"></i></a>
-          <p><span>Göteborgs vägen 73</span> 451 37, Göteborg</p>
-        </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p> 0700 - 63 47 26</p>
+          </div>
   
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+46 743 362 37</p>
-        </div>
-  
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:Support@.NetJuniorConsulting">Support@.NetJuniorConsulting</a></p>
-        </div>
+          <div>
+            <i class="fa fa-envelope"></i><p><a href="mailto:Junior.Consulting@gmail.com">Kontakta oss här</a></p>
+          </div>
+
+			</div>
+
+      <div class="my-footer-right">
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://se.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+				</div>
       </div>
-  
-      <div class="footer-right my-footer-right">
-        <div>
-          <p class="footer-company-about">
-            <span>Om oss</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-          </p>
-        </div>
-  
-        <div class="footer-icons">
-          <a href="https://www.facebook.com/%22%3E<i class="fa fa-facebook"></i></a>
-          <a href="https://se.linkedin.com/%22%3E<i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/%22%3E<i class="fa fa-github"></i></a>
-        </div>
-      </div>
-      </div>
-    </div>
-  
+
+		</div>
+
+
   </footer>
   
   </body>
