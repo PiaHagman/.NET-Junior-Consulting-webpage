@@ -1,7 +1,15 @@
-/* styleing för navbar
-/* fonts
-/* style för footer
-/* button*/
+h1 {
+  font-family: "Noto Serif", serif;
+  color: #386369;
+}
+
+h2 {
+  font-family: "Noto Serif", serif;
+  color: #386369;
+}
+nav {
+  transition: 0.5s;
+}
 
 .fixed-navbar {
   position: fixed;
@@ -38,6 +46,14 @@ h2{
   font-size: 30px;
   color: #4f5a57;
 }
+.navbar-toggle {
+  transition: 2s;
+}
+
+.navbar button:hover,
+button a:hover {
+  background-color: transparent;
+}
 
 .my-button {
   text-align: center;
@@ -57,7 +73,6 @@ h2{
 .my-button a {
   color: white;
   text-decoration: none;
-  
 }
 .my-button:hover,
 .my-button a:hover {
@@ -65,8 +80,91 @@ h2{
   color: white;
 }
 
-.navbar .button:hover,
-.my-button a:hover {
-  background-color: transparent;
+/* footer */
+
+footer {
+  background-color: #19383d;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+.my-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.my-footer-left,
+.my-footer-center,
+.my-footer-right {
+  color: gray;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.my-footer-left {
+  color: gray;
+  font-size: 14px;
+}
+
+.my-footer-center {
+  width: 60%;
+}
+
+.my-footer-center i {
+  background-color: #8f9e9e;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 35%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+}
+.my-footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.my-footer-center p {
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 16px;
+}
+
+.my-footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.my-footer-center p a {
+  color: gray;
+  text-decoration: none;
+}
+
+.my-footer-right .footer-icons {
+  display: flex;
+}
+
+.my-footer-right .footer-icons a {
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+  background-color: #8f9e9e;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 15px;
+  border-radius: 10px;
 }
 

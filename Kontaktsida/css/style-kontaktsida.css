@@ -1,288 +1,254 @@
 body {
-  margin:0;
-  padding:0;
-  width:100%;
-  height:100%;
-  font-family:sans-serif;
-  background-color:#474646
-  
+  font-family: sans-serif;
+  background-color: #e6eded;
+}
+.main-content {
+  height: 300px;
+  background-color: #e6eded;
+}
+
+.main-area {
+  display: grid;
+  grid-template-rows: 110px 1fr 50px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+.about-us {
+  grid-area: 2/1/3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.about-us h1 {
+  margin-top: 55px;
+  padding: 20px;
+  font-size: 250%;
+  text-align: center;
+  color: #19383d;
+  font-family: "Noto Serif", serif;
+}
+
+.about-us p {
+  text-align: center;
+  max-width: 900px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.cf {
+  font-family: "Merriweather", sans-serif;
+  padding: 1em;
+}
+h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #a8a8a8;
+}
+
+form {
+  max-width: 900px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  @include border-radius(8px);
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: "Merriweather", sans-serif;
+  @include box-shadow(0 1px 1px rgba(black, 0.1));
+  resize: none;
+  border-radius: 4px;
+}
+
+#input-submit {
+  color: white;
+  cursor: pointer;
+  background-color: #8f9e9e;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 170px;
+}
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 1%;
 }
 
 .testimotionals {
-width:350px;
- display:inline-block;
-  margin-left:50px;
-  margin-top:50px
-  
+  width: 350px;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 40px;
 }
-
 
 .testimotionals .card {
-  
-  position:relative;
-  overflow:hidden;
-  width:350px;
-  margin:0 auto;
-  background:#33383b;
-  padding:20px;
-  box-sizing:border-box; 
-  text-align:center;
-  box-shadow:0 10px 40px rgb(15, 22, 22);
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  margin: 0 auto;
+  background: #8f9e9e;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
 }
 .testimotionals .card .layer {
-  z-index:1;
-  position:absolute;
-  top:calc(100% - 2px);
-  height:100%;
-  width:100%;
-  left:0;
-  background:linear-gradient(to left , rgb(81, 124, 122), rgb(63, 60, 59));
-  transition:0.5s;
-  
+  z-index: 1;
+  position: absolute;
+  top: calc(100% - 2px);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to left, #19383d, #19383d);
+  transition: 0.5s;
 }
 
 .testimotionals .card .content {
-  z-index:2; 
-  position:relative;
+  z-index: 2;
+  position: relative;
+  height: 300px;
+  width: auto;
 }
 
-.testimotionals .card:hover  .layer{
-  top:0;
+.testimotionals .card:hover .layer {
+  top: 0;
 }
 
 .testimotionals .card .content p {
-  font-size:14px;
-  line-height:24px;
-  color:#fff;
-  
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
 }
 .testimotionals .card .content .image {
-  width:100px; height:100px;
-  margin:0 auto;
-  border-radius:50%;
-  overflow:hidden;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 70%;
+  overflow: hidden;
   border: 4px solid white;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-  
+  box-shadow: 0 10px 40px #19383d;
 }
-
+.testimotionals {
+  font-family: "Times New Roman", Times, serif;
+}
 .testimotionals .card .conte nt .details h2 {
-font-size:18px;
-color:white;
+  font-size: 18px;
+  color: white;
 }
 .testimotionals .card .content .details h2 span {
-font-size:18px;
-color:rgb(179, 181, 182);
-  transition:0.5s;
+  font-size: 18px;
+  color: rgb(179, 181, 182);
+  transition: 0.5s;
 }
 .testimotionals .card:hover .content .details h2 span {
-  color:white;
-  position:relative
-}
-body{
-  margin-bottom:20px
+  color: white;
+  position: relative;
 }
 
 /* footer */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
+footer {
+  background-color: #19383d;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  padding: 25px 20px;
 }
-
-
-
-.footer-distributed{
-	background: #666;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
-}
-
-.footer-distributed .footer-left,section {
-	width: 100%;
-	display: inline-block;
-	background: rgb(236, 235, 235);
-	height: 50vh;
-	text-align: center;
-	font-size: 22px;
-	font-weight: 700;
-	text-decoration: underline;
-	
-  }section {
+.my-footer {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  display: inline-block;
-  background: rgb(236, 235, 235);
-  height: 50vh;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.my-footer-left,
+.my-footer-center,
+.my-footer-right {
+  color: gray;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
 }
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
+.my-footer-left {
+  color: gray;
+  font-size: 14px;
 }
 
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
+.my-footer-center {
+  width: 60%;
 }
 
-
-.footer-distributed h3 span{
-	color:  rgb(81, 124, 122);
+.my-footer-center i {
+  background-color: #8f9e9e;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 35%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+}
+.my-footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
 }
 
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  rgb(81, 124, 122);
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-	color:  #33383b;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color:  rgb(81, 124, 122);
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #33383b;
-  font-weight:400;
-	vertical-align: middle;
-	margin:0;
-}
-
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-	color: #33383b;
-	text-decoration: none;;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: #33383b;
+.my-footer-center p {
   display: inline-block;
-  padding-right: 5px;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 16px;
 }
 
-.footer-distributed .footer-links .link-1:before {
-  content: none;
+.my-footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
 }
 
-/* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 20%;
+.my-footer-center p a {
+  color: gray;
+  text-decoration: none;
 }
 
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color: #33383b;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
+.my-footer-right .footer-icons {
+  display: flex;
 }
 
-.footer-distributed .footer-company-about span{
-	display: block;
-	color: #33383b;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
+.my-footer-right .footer-icons a {
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+  background-color: #8f9e9e;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 15px;
+  border-radius: 10px;
 }
