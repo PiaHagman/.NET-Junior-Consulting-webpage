@@ -1,7 +1,4 @@
 body {
-  margin:0;
-  padding:0;
-  height:100%;
   font-family:sans-serif;
   background-color:#474646
   
@@ -52,7 +49,6 @@ width:350px;
   font-size:14px;
   line-height:24px;
   color:#fff;
-  
 }
 .testimotionals .card .content .image {
   width:100px; height:100px;
@@ -76,9 +72,6 @@ color:rgb(179, 181, 182);
 .testimotionals .card:hover .content .details h2 span {
   color:white;
   position:relative
-}
-body{
-  margin-bottom:100px
 }
 
 /* footer */
