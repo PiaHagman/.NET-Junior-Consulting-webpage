@@ -8,13 +8,154 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../GeneralStyle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 
+
 <body>
+  <header>
+    <!-- NAVBAR-->
+    <div class="fixed-navbar">
+      <!--.navbar-expand-lg determine when their content collapses behind a button. -->
+      <!--.navbar-light stylar med förinställda färger. -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="/images/logo.png"
+              alt=".NET Junior Consulting logo"
+            />
+          </a>
+          <!--.navbar-toggler determine when their content collapses behind a button. 
+          HAMBURGEKNAPP FUNKTIONEN-->
+          <button
+            onclick="changeBgAndShadow()"
+            class="navbar-toggler"
+            id="hamburger-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--.navbar-collapse determine when their content collapses behind a button. -->
+          <!-- "STOR BILD NAVBAR FUNKTION" -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- ms-auto mb-2 mb-lg-0 placerar navbar placerars till höger-->
+            <!--.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Kontaktsida/Index.html">Om oss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bloggsida/Index.html">Blogg</a>
+              </li>
+              <!--Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.-->
+              <li class="nav-item dropdown profile-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Tjanster/index.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tjänster
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="Tjanster/">Tjänster</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Tjanster/webbsidor.html"
+                      >Webbsidor</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Tjanster/mjukvarutest.html"
+                      >Mjukvarutestning</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Tjanster/Databaser.html"
+                      >Databaser</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Tjanster/javascript.html"
+                      >Javascript</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Tjanster/csharp.html"
+                      >C#</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   
+    <!--
+    Javasqrit kod för att skapa scrolleffecten på navbar
+    - lägger till och tar bort bootstrapkod shadow och bg-light på nav
+    - <50 är när effecten ska kicka igång
+    - functionen changeBgAndShadow() har jag lagt till dels som onclick på toggler butten. Men också 
+    efter en variabel togglerExpanded som via getAttribute("aria-expanded") gör att javascript kan känna av om toggler menyn
+    är öppen eller stängd.
+    -->
+    <script>
+      function changeBgAndShadow() {
+        var togglerExpanded = document
+          .getElementById("hamburger-button")
+          .getAttribute("aria-expanded");
+        if (togglerExpanded == "true" || window.pageYOffset > 50) {
+          nav.classList.add("bg-light", "shadow");
+        } else {
+          nav.classList.remove("bg-light", "shadow");
+        }
+  
+        document
+          .getElementById("hamburger-button")
+          .setAttribute("aria-expanded", togglerExpanded);
+      }
+  
+      var nav = document.querySelector("nav");
+  
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 50) {
+          changeBgAndShadow();
+        } else {
+          nav.classList.remove("bg-light", "shadow");
+        }
+      });
+    </script>
+    <!--NAVBAR SLUT-->
+    </header>
+    <style>.column {
+      width: 100%;
+    }
+    </style>
     <header>
-      <strong>Välkommen till vår blogg</strong>
-      <h2>
+      <h4>
+        <div class= "e"></div> 
         <div class= "b"></div> 
         
         <div class="row">
@@ -45,7 +186,7 @@
         </div>
         
         <div class= "b"></div> 
-      </h2>
+      </h4>
         <div class="titel"><strong>Av författaren Sven Axelsson</strong></div>
 
         <div class= "b"></div> 
@@ -58,18 +199,50 @@
         </aside>
     </main>
     <footer>
-        <div class = " footer-contents">
-          <h3>Sven Axelsson</h3>
-          <ul class = "socials">
-            <li><a href="#"><i class ="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class ="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class ="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class ="fa fa-youtube"></i></a></li>
-            <li><a href="#"><i class ="fa fa-linkedin-square"></i></a></li>
-            <li><a href="#"><i class ="fa fa-instagram"></i></a></li>
-            </ul>
+      <div class="container my-footer">
+    
+        <div class="my-footer-left">
+            <a href="../Index.html"
+              ><img class="logo" src="./img/logo.png" />
+            </a>
+    
+           <p class="footer-company-name">.NET Junior Consulting © 2022</p>
+        </div>
+    
+    
+        <div class="my-footer-center">
+    
+            <div>
+              <a href="https://www.google.se/search?q=G%C3%B6teborgsv%C3%A4gen+73%2C+M%C3%B6lndal&sxsrf=AOaemvLjNXL_Os3iYT9fYkV8yka7MAPkOA%3A1642127086449&ei=7t7gYdfgGuaExc8P3PyOuAQ&oq=g%C3%B6teborgs+v%C3%A4gen+73+m&gs_lcp=Cgdnd3Mtd2l6EAMYADICCCYyAggmMgIIJjoJCAAQsAMQDRAeOgYIABANEB5KBAhBGAFKBAhGGABQswxY0Tlg-kNoAXAAeACAAVOIAaIBkgEBMpgBAKABAcgBAcABAQ&sclient=gws-wiz"><i class="fa fa-map-marker"></i></a>
+              <p><span>Göteborgsvägen 73</span>431 60 Mölndal</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p> 0700 - 63 47 26</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i><p><a href="mailto:Junior.Consulting@gmail.com">Kontakta oss här</a></p>
+            </div>
+    
+        </div>
+    
+        <div class="my-footer-right">
+    
+          <div class="footer-icons">
+    
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://se.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa fa-github"></i></a>
+    
           </div>
-      </footer>
+        </div>
+    
+      </div>
+    
+    
+    </footer>
     </header>
 </body>
 

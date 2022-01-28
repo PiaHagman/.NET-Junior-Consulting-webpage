@@ -25,17 +25,20 @@ div.b  {
 div.d{
     background-color: black;
 }
+div.e {
+    border-top: 170px solid rgb(218, 218, 218);
+}
 
 * {
     box-sizing: border-box;
   }
-.column {
+/*.column {
     float: left;
-    width: 33%;
+    width: 100%;
     padding: 10px ;
     border-left: 10px;
 
-  }
+  }*/
 .column2{
     float: left;
     width: 48%;
@@ -52,7 +55,7 @@ div.d{
   h1{
     background-color: white;
 }
-h2{
+h4{
   background-color: gray;
 }
 h3 {
@@ -62,19 +65,6 @@ h3 {
   font-size:  36px;
 }
 
-.socials li {
-  margin: 0 10 px;
-}
-.socials a i{
-  font-size:  1.1rem;
-}
-.socials a{
-  text-decoration: none;
-  color: #fff;
-}
-.socials a:hover i{
-  color: aqua;
-}
 .header{
   width: 100%;
   height: 40px;
