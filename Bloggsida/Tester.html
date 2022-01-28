@@ -1,66 +1,30 @@
-<html lang="en"><head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="./minstyle.css">
-    <link rel="stylesheet" type="text/css" href="../GeneralStyle.css">
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>carousel slider bootstrap 5</title>
-  </head>
-  <body>
-      
-    <style>
-        .carousel{
-            background:  rgb(218, 218, 218);
-
-        }
-        .carousel-inner{
-            padding-top: 170px;
-            padding-left: 100px;
-            padding-right: 35px;
-            padding-bottom: 5px;
-            /*width: 50%*/
-        }
-        .carousel-item{
-        /*height: 12 rem;*/
-        background:  gray;
-        /*border-radius: 20px;
-        /*color :white;    #e6eded #19383d #527177*/
-        /*position: relative;
-        background-position: center;
-        background-size: cover;*/
-        }
-        .container1{
-            /*position: center;
-            padding-left: 200px;
-            padding-right: 200px;*/
-            padding-bottom: 40px;
-            width: 70%;
-        }
-        .try{
-            background-color: rgb(39, 39, 39);
-            color: white;
-            font-size: 150%;
-            font-weight: 900;
-        }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     
-    </style>
-    <header>
+
+    <!--Bootstrap stylesheet-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    
+    
+
+    
+    
+    <!--Generel stylesheet-->
+    <link rel="stylesheet" href="../GeneralStyle.css" />
+  <header>
     <!-- NAVBAR-->
     <div class="fixed-navbar">
       <!--.navbar-expand-lg determine when their content collapses behind a button. -->
@@ -188,102 +152,141 @@
       });
     </script>
     <!--NAVBAR SLUT-->
-    </header>
+  </header>
+  <body>
+      
+  </body>
+  <style>
+      .carousel{
+          background:  rgb(218, 218, 218);
 
-    <div id="MyCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#MyCarousel" data-slide-to="0" class=""></li>
-            <li data-target="#MyCarousel" data-slide-to="1" class="active"></li>
-            <li data-target="#MyCarousel" data-slide-to="2" class=""></li>
-        </ol>
-        <div class="carousel-inner">
+      }
+      .carousel-inner{
+          padding-top: 170px;
+          padding-left: 100px;
+          padding-right: 35px;
+          padding-bottom: 5px;
+          /*width: 50%*/
+      }
+      .carousel-item{
+      /*height: 12 rem;*/
+      background:  gray;
+
+      /*border-radius: 20px;
+      /*color :white;    #e6eded #19383d #527177*/
+      /*position: relative;
+      background-position: center;
+      background-size: cover;*/
+      }
+      .container1{
+          /*position: center;
+          padding-left: 200px;
+          padding-right: 200px;*/
+          padding-bottom: 40px;
+          width: 70%;
+      }
+      .try{
+          background-color: rgb(39, 39, 39);
+          color: white;
+          font-size: 150%;
+          font-weight: 900;
+      }
+  
+  </style>    
+
+  <div id="MyCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#MyCarousel" data-slide-to="0" class=""></li>
+          <li data-target="#MyCarousel" data-slide-to="1" class="active"></li>
+          <li data-target="#MyCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
           <div class="try">Blogg</div>
-            <div class="carousel-item">
-        
-                <div class="container1">
-                    <h5>Välkommen till våran bloggsida!</h5>
-                    <h1>
-                        <img src="./img\20210802_062731.jpg" width="70%" height="360"></h1>
-                    <p>
-                        <strong>Nyheter vi på har fått en ny hemsida</strong>
-                    </p>                    
-                    <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          Läs kortfattat
-                        </a>
-                        <a href="bloggareNatur.html" class="btn btn btn-primary">
-                            Se hela blogginlägget
-                        </a>
-                      </p>
-                      <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            Vi på .net Junior Consulting har fått en ny hemsida där ifrån vi kan sköta allt relaterat till våran företagsamhet.
+          <div class="carousel-item">
+              <div class="container1">
+                  <h5>Välkommen till våran bloggsida!</h5>
+                  <h1>
+                      <img src="./img\20210802_062731.jpg" width="100%" height="360"></h1>
+                  <p>
+                      <strong>Nyheter vi på har fått en ny hemsida</strong>
+                  </p>                    
+                  <p>
+                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Läs kortfattat
+                      </a>
+                      <a href="bloggareNatur.html" class="btn btn btn-primary">
+                          Se hela blogginlägget
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                          Vi på .net Junior Consulting har fått en ny hemsida där ifrån vi kan sköta allt relaterat till våran företagsamhet.
 
-                        </div>
                       </div>
-                </div>
-            </div>
-            <div class="carousel-item active">
-                <div class="container1">
-                    <h5>Välkommen till våran bloggsida!</h5>
-                    <h1>
-                        <img src="./img\Digital.jpg" width="100%" height="360"></h1>
-                    <p>
-                        <strong>Juniora webbutvecklare</strong>
-                    </p>                    
-                    <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          Läs kortfattat
-                        </a>
-                        <a href="NyHemsida.html" class="btn btn btn-primary">
-                            Se hela blogginlägget
-                        </a>
-                      </p>
-                      <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            Om vårt företagsuppdrag på Juniora webbutvecklare
+                    </div>
+              </div>
+          </div>
+          <div class="carousel-item active">
+              <div class="container1">
+                  <h5>Välkommen till våran bloggsida!</h5>
+                  <h1>
+                      <img src="./img\Digital.jpg" width="100%" height="360"></h1>
+                  <p>
+                      <strong>Juniora webbutvecklare</strong>
+                  </p>                    
+                  <p>
+                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Läs kortfattat
+                      </a>
+                      <a href="bloggareNatur.html" class="btn btn btn-primary">
+                          Se hela blogginlägget
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                          Om vårt företagsuppdrag på Juniora webbutvecklare
 
-                        </div>
                       </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container1">
-                    <h5>Välkommen till våran bloggsida!</h5>
-                    <h1>
-                        <img src="./img\20210728_134634.jpg" width="100%" height="360"></h1>
-                    <p>
-                        <strong>Nyhet Företagsengagemang</strong>
-                    </p>                    
-                    <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          Läs kortfattat
-                        </a>
-                        <a href="Framtidsutveckling.html" class="btn btn btn-primary">
-                            Se hela blogginlägget
-                        </a>
-                      </p>
-                      <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            Vi på --- har fått en ny hemsida där ifrån vi kan sköta allt relaterat till våran företagsamhet.
+                    </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="container1">
+                  <h5>Välkommen till våran bloggsida!</h5>
+                  <h1>
+                      <img src="./img\20210728_134634.jpg" width="100%" height="360"></h1>
+                  <p>
+                      <strong>Nyhet Företagsengagemang</strong>
+                  </p>                    
+                  <p>
+                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Läs kortfattat
+                      </a>
+                      <a href="Framtidsutveckling.html" class="btn btn btn-primary">
+                          Se hela blogginlägget
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                          Vi på --- har fått en ny hemsida där ifrån vi kan sköta allt relaterat till våran företagsamhet.
 
-                        </div>
                       </div>
-                </div>
-            </div>
-        </div>
-        <a href="#MyCarousel" class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="sr only">Föregående</span>
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a href="#MyCarousel" class="carousel-control-next" role="button" data-slide="next">
-                <span class="sr only">Nästa</span>
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
-        
-        
+                    </div>
+              </div>
+          </div>
+      </div>
+      <a href="#MyCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="sr only">Föregående</span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a href="#MyCarousel" class="carousel-control-next" role="button" data-slide="next">
+              <span class="sr only">Nästa</span>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+      
+      
 
-    </div>
+  </div>
 
     <footer>
         <div class="container my-footer">
@@ -331,6 +334,14 @@
       
       </footer>
       <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <!--Bootstrap javascrip länk-->
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
