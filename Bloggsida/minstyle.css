@@ -32,15 +32,15 @@ div.d{
 .column {
     float: left;
     width: 33%;
-    padding: 1px ;
+    padding: 10px ;
   }
-  .column2{
+.column2{
     float: left;
-    width: 40%;
-    padding: 1px ;
-    /*padding: 10px black;
-    border-left: 10px;*/
-  }
+    width: 48%;
+    padding: 10px ;
+    /*padding: 10px black;*/
+    border-left: 10px;
+}
   .row::after {
     content: "";
     clear: both;
@@ -118,6 +118,9 @@ color: #fff;
   display: table-cell;
   vertical-align: middle;
 }
-titel{
-  background-color: gray;
+.rubrik{
+  font-size: 36px;
+}
+.titel{
+  font-size: 20px;
 }
