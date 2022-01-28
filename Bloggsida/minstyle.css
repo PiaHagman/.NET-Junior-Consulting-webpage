@@ -3,8 +3,8 @@
     /*margin-top: 5;*/
     padding: 0px;
     border: 0px inset black;
-    /*border-left: 1px black;
-    /*background-color: gray;*/
+    /*border-left: 1px black;*
+    background-color: gray;*/
 }
 
 div.c{
@@ -49,6 +49,9 @@ div.d{
 
   h1{
     background-color: white;
+}
+h2{
+  background-color: gray;
 }
 h3 {
   font-family: "Open Sans";
@@ -114,4 +117,7 @@ color: #fff;
 .navigering a li{
   display: table-cell;
   vertical-align: middle;
+}
+titel{
+  background-color: gray;
 }
