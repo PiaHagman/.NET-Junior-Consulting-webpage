@@ -4,7 +4,7 @@
 }
 body,
 .homepage {
-  background: rgb(220, 228, 227, 0.3) url(/images/bethany-legg-mobile-alt2.jpg)
+  background: rgb(220, 228, 227, 0.3) url(images/bethany-legg-mobile-alt2.jpg)
     no-repeat;
 }
 .main-area {
@@ -102,7 +102,7 @@ footer {
         transparent,
         rgba(237, 234, 230, 0.3)
       ),
-      url(/images/bethany-legg-desktop-alt2.jpg);
+      url(images/bethany-legg-desktop-alt2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /*background: url(/images/bethany-legg-desktop-alt2.jpg) no-repeat;
