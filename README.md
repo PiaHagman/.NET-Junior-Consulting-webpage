@@ -9,4 +9,4 @@ Innehåller en statisk websida för ett fiktivt konsultbolag.  <br>
 
 Min del i projektet är sidan /Tjanster med undersidor. <br>
 
-Kika här: https://piahagman.github.io/.NET-Junior-Consulting-webpage/
+Kika här: https://piahagman.github.io/.NET-Junior-Consulting-webpage/Tjanster/
